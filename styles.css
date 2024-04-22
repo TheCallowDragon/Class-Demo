@@ -23,8 +23,10 @@ h2 {
 text-align: center;
 border: 2px solid black;
 background-color: rgba(0, 0, 0, 0.247);
-padding: .5%;
+padding: 0.5;
 margin: 0;
+margin-bottom: 1%;
+margin-left: -.5%;
 -webkit-text-stroke: .25px rgb(255, 255, 255);
 font-size: 150%;
 
@@ -40,6 +42,8 @@ h3 {
     display: block;
     padding: .2%;
     width: 10%;
+    background-color: black;
+    color: gold;
 
 }
 
@@ -101,18 +105,20 @@ position: absolute;
 main {
 max-width: 35%;
 margin-left: 32%;
-border: 2px solid;
+border: 2px;
+border-style:solid;
+border-radius: 15%;
 padding: 1%;
 margin-top: 5%;
-background-color: rgba(128, 128, 128, 0.512);
+background-color: rgba(128, 128, 128, 0.693);
 
 }
 
 footer {
     text-align: left;
-    padding: 10%;
+   
     margin-top: 30%;
-    margin-left: 10%;
+    margin-left: 15%;
     }
     
 p {
@@ -126,7 +132,11 @@ margin-top: 0%;
 }
 
 
+button {
+background-color: red;
+color: gold;
 
+}
 
 
 
