@@ -1,3 +1,6 @@
+@media only screen and (min-width: 1200px) {
+    /* CSS rules for large devices */
+
 h1 {
     overflow: auto;
     margin: auto;
@@ -94,3 +97,129 @@ background-color: rgba(128, 128, 128, 0.512);
 
 }
 
+footer {
+    text-align: left;
+    padding: 10%;
+    margin-top: 30%;
+    margin-left: 10%;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* CSS rules for extra small devices */
+    h1 {
+        overflow: auto;
+        margin: auto;
+        vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.955);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: 1px rgb(203, 64, 64);
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    h2 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: .5%;
+    margin: 0;
+    -webkit-text-stroke: .25px rgb(255, 255, 255);
+    font-size: 150%;
+    
+    }
+    
+    
+    
+    h3 {
+        text-align: center;
+        border: 2px solid black;
+        margin: 0;
+        margin-left: 40.5%;
+        display: block;
+        padding: .2%;
+        width: 20%;
+    
+    }
+    
+    
+    
+    
+    body {
+        background-color: rgb(222, 219, 219);
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(assets/announcement/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    
+    
+    
+    .left {
+    position: absolute;
+    align-content:left ;
+    float: left;
+    
+    }
+    .left img {
+    position: relative;
+    margin-left: 0%;
+    width: 20%;
+    display: block;
+    z-index: 0;
+    }
+    .right{
+    position: absolute;
+    float: right;
+    margin-left: 35%;
+    }
+    .right img {
+        padding-left:70% ;
+        display: block;
+        z-index: 0;
+        width: 30%;
+        
+    }
+    
+    
+    
+    main {
+    max-width: 35%;
+    margin-left: 32%;
+    border: 2px solid;
+    padding: 1%;
+    margin-top: 5%;
+    background-color: rgba(128, 128, 128, 0.512);
+    
+    }
+
+
+footer {
+text-align: center;
+padding: 80%;
+}
+
+}
