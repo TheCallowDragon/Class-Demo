@@ -155,10 +155,10 @@ footer {
         text-align: center;
         border: 2px solid black;
         margin: 0;
-        margin-left: 40.5%;
+        margin-left: 36.5%;
         display: block;
         padding: .2%;
-        width: 20%;
+        width: 30%;
     
     }
     
@@ -187,7 +187,7 @@ footer {
     .left img {
     position: relative;
     margin-left: 0%;
-    width: 20%;
+    width: 30%;
     display: block;
     z-index: 0;
     }
@@ -197,10 +197,11 @@ footer {
     margin-left: 35%;
     }
     .right img {
-        padding-left:70% ;
+        padding-left: 56% ;
         display: block;
         z-index: 0;
-        width: 30%;
+        width: 47%;
+        position: relative;
         
     }
     
