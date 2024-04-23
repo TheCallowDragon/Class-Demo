@@ -145,7 +145,7 @@ color: gold;
 
 
 @media only screen and (max-width: 600px) {
-
+    /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
     h1 {
         overflow: auto;
