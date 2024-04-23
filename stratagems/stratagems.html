@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratagems</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <button type="button">Back To Site</button>
+    </a>
+    <h1>Helldivers 2 Stratagems</h1>
+
+    <h2>Categories</h2>
+    <h3>Click a Category to Open</h3>
+
+    <ul>
+        <li class="line" id="clickableLine"><strong>Supply</strong></li>
+        <div class="expandedText" id="expandedText">
+            AX/LAS-5 "Guard Dog" Rover <br>
+            AX/AR-23 "Guard Dog" <br>
+            LIFT-850 Jump Pack <br>
+            B-1 Supply Pack <br>
+            SH-32 Shield Generator Pack <br>
+            SH-20 Ballistic Shield Backpack <br>
+            Supply: Support Weapons <br>
+            AC-8 Autocannon <br>
+            EAT-17 Expendable Anti-tank <br>
+            FLAM-40 Flamethrower <br>
+            LAS-98 Laser Cannon <br>
+            M-105 Stalwart <br>
+            MG-43 Machine Gun <br>
+            ARC-3 Arc Thrower <br>
+            GL-21 Grenade Launcher <br>
+            APW-1 Anti-Materiel Rifle <br>
+            RS-422 Railgun <br>
+            GR-8 Recoilless Rifle <br>
+            FAF-14 SPEAR Launcher <br>
+            LAS-99 Quasar Cannon <br>
+            MG-206 Heavy Machine Gun <br><br>
+            <strong>Supply: Vehicles</strong><br>
+            EXO-45 Patriot Exosuit <br>
+        </div>
+        <li class="line" id="clickableLine2"><strong>Defensive</strong></li>
+        <div class="expandedText" id="expandedText2">
+            A/ARC-3 Tesla Tower <br>
+            A/M-12 Mortar Sentry <br>
+            A/M-23 EMS Mortar Sentry <br>
+            A/MG-43 Machine Gun Sentry <br>
+            A/G-16 Gatling Sentry <br>
+            MD-6 Anti-Personnel Minefield <br>
+            MD-I4 Incendiary Mines <br>
+            FX-12 Shield Generator Relay <br>
+            E/MG-101 HMG Emplacement <br>
+            A/AC-8 Autocannon Sentry <br>
+            A/MLS-4X Rocket Sentry <br>
+        </div>
+            <li class="line" id="clickableLine3"><strong>Offensive</strong></li>
+            <div class="expandedText" id="expandedText3">
+                Orbital Precision Strike <br>
+                 	Orbital Airburst Strike  <br>
+                 	Orbital 120MM HE Barrage <br>
+                 	Orbital 380MM HE Barrage <br>
+                 	Orbital Walking Barrage <br>
+                 	Orbital Laser <br>
+                 	Orbital Railcannon Strike <br>
+                 	Orbital Gatling Barrage <br>
+                 	Orbital Gas Strike <br>
+                 	Orbital EMS Strike <br>
+                 	Orbital Smoke Strike <br><br>
+                     <strong>Offensive: Eagle</strong> <br>
+                 	Eagle Strafing Run <br>
+                 	Eagle Airstrike <br>
+                 	Eagle Cluster Bomb <br>
+                 	Eagle Napalm Strike <br>
+                 	Eagle Smoke Strike <br>
+                 	Eagle 110MM Rocket Pods <br>
+                 	Eagle 500kg Bomb <br>
+                </div>
+                <li class="line" id="clickableLine4"><strong>Mission</strong></li>
+                <div class="expandedText" id="expandedText4">
+                        Resupply <br>
+                     	SOS Beacon <br>
+                     	Reinforce <br>
+                        Hellbomb <br>
+                     	SSSD Delivery <br>
+                     	Upload Data <br>
+                        Eagle Rearm <br>
+                       	Seismic Probe <br>
+                     	Orbital Illumination Flare <br>
+                    </div>
+
+    </ul>
+</body>
+<script>
+    document.getElementById('clickableLine').addEventListener('click', function () {
+        var expandedText = document.getElementById('expandedText');
+        if (expandedText.style.display === 'none') {
+            expandedText.style.display = 'block';
+        } else {
+            expandedText.style.display = 'none';
+        }
+    });
+    document.getElementById('clickableLine2').addEventListener('click', function () {
+        var expandedText = document.getElementById('expandedText2');
+        if (expandedText.style.display === 'none') {
+            expandedText.style.display = 'block';
+        } else {
+            expandedText.style.display = 'none';
+        }
+    });
+    document.getElementById('clickableLine3').addEventListener('click', function () {
+        var expandedText = document.getElementById('expandedText3');
+        if (expandedText.style.display === 'none') {
+            expandedText.style.display = 'block';
+        } else {
+            expandedText.style.display = 'none';
+        }
+    });
+    document.getElementById('clickableLine4').addEventListener('click', function () {
+        var expandedText = document.getElementById('expandedText4');
+        if (expandedText.style.display === 'none') {
+            expandedText.style.display = 'block';
+        } else {
+            expandedText.style.display = 'none';
+        }
+    });
+
+
+</script>
+
+</html>

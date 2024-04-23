@@ -1,0 +1,17 @@
+
+.expandedText {
+    display: none;
+}
+
+.line {
+    cursor: pointer;
+    /* Add other styling as desired */
+}
+
+ul {
+    margin-top: 1%;
+    border: solid black;
+    background-color: gray;
+    text-align: center;
+    
+}
