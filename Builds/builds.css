@@ -12,6 +12,15 @@
 
 }
 
+
+a {
+    color: rgb(0, 0, 0)
+}
+
+a:hover {
+    color: gold
+}
+
 body {
     background-color: rgb(222, 219, 219);
     line-height: 1;
@@ -76,24 +85,24 @@ h1 {
 .dropdownmenu {
     text-align: center;
     font-size: 1em;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     display: none;
     top: 100%;
-    left: 38%;
-    width: 23%;
+    left: 34.5%;
+    width: 30%;
     transform: translateY(0%);
     background-color: #333;
-    padding: 10px;
+    padding: .25%;
     z-index: 1;
     white-space: nowrap;
+    border-radius: 20px;
 }
-
 .dropdownmenu a {
     display: inline-block;
     color: #b88e11;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 1% 0;
     z-index: 1;
     white-space: nowrap;
 }
@@ -130,7 +139,7 @@ h1 {
     perspective: 1000px;
     /* Add perspective for 3D effect */
     max-width: 100%;
-
+    
 }
 
 .card-inner {
@@ -147,8 +156,9 @@ h1 {
 }
 
 .card:hover .card-inner {
-    transform: rotateY(180deg);
+    transform:  scale(.70) rotateY(180deg);
     /* Flip on hover */
+    transform-origin: center center 100px;
 }
 
 .card:hover .card-back {
@@ -166,13 +176,14 @@ h1 {
     text-align: left;
     position: absolute;
     width: 100%;
-    height: 95%;
+    height: 100%;
     margin-top: -30em;
+   
     overflow: hidden;
     white-space: nowrap;
     font-size: 1em;
     line-height: 1.5;
-    border-radius: 10%;
+    border-radius: 25px;
     border-style: ridge;
     border-width: .35em;
 }
@@ -181,9 +192,10 @@ h1 {
 
 
 .card-front {
-    background-color: #4a4a4a;
+    background: linear-gradient(to right, #272727, #4f4c4c);
     /* Front side background */
     height: 70%;
+
 }
 
 .card-back {
@@ -196,7 +208,7 @@ h1 {
     /* Back side background */
     transform: rotateY(180deg);
     /* Initially hidden */
-
+    
 }
 
 img {
@@ -222,7 +234,7 @@ img {
 }
 
 .classdesc {
-
+    
     background-color: #a6a0a0;
     border-style: solid;
     border-width: .5em;
@@ -240,7 +252,7 @@ img {
 
 
 #rangerback {
-    background-color: orange;
+    background: linear-gradient(to right, #bd5506, #bd1d1d);
 
 }
 
@@ -254,7 +266,8 @@ img {
 }
 
 #botslayerback {
-    background-color: red;
+  
+    background: radial-gradient(circle at center, red, rgb(9, 9, 9));
 
 }
 
@@ -354,7 +367,7 @@ img {
         white-space: nowrap;
         font-size: 1em;
         line-height: 1.5;
-        border-radius: 10%;
+        border-radius: 15px;
         border-style: ridge;
         border-width: .35em;
     }
