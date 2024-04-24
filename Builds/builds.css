@@ -1,0 +1,105 @@
+
+.nav-container {
+    position: relative;
+    background-color: #ed0606c2;
+    border-color: black;
+    border: 2px solid black;
+    color: #fff;
+    padding: 5px;
+  }
+  .dropdownarrow {
+    position: absolute;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    color:white;
+    top: 100%;
+    left: 49.8%;
+    transform: translateX(-50%);
+    width: 10;
+    height: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #d1b814;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .dropdownmenu {
+    text-align: center ;
+    font-size: large;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 38%;
+    width: 23%;
+    transform: translateY(0%);
+    background-color: #333;
+    padding: 10px;
+    z-index: 1;
+    white-space: nowrap;
+  }
+  .dropdownmenu a {
+    display: inline-block;
+    color: #b88e11;
+    text-decoration: none;
+    padding: 5px 0;
+    z-index: 1;
+    white-space: nowrap;
+  }
+  /* Dropdown animation */
+  .dropdownmenu.active {
+    display: block;
+    animation: slideDown 0.5s ease;
+  }
+  @keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10%;
+  }
+  
+  .card {
+    perspective: 1000px; /* Add perspective for 3D effect */
+    
+    
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 150%; /* Maintain aspect ratio */
+    transform-style: preserve-3d; /* Maintain 3D effect */
+    transition: transform .5s; /* Add transition for smooth flip */
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide backface during flip */
+  }
+  
+  .card-front {
+    background-color: #f0f0f0; /* Front side background */
+  }
+  
+  .card-back {
+    background-color: #ddd; /* Back side background */
+    transform: rotateY(180deg); /* Initially hidden */
+  }
+  
+  img {
+    width: 70%;
+  }

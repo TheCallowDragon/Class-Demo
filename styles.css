@@ -74,7 +74,7 @@
         margin: 0;
         text-align: center;
         border-color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.955);
+        background: linear-gradient(to right, #000000, #484848); 
         border: 2px solid;
         border-style: solid;
         width: 100%;
