@@ -1,3 +1,17 @@
+/* Basic CSS for header elements */
+.cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
 body {
     background-color: rgb(222, 219, 219);
     line-height: 1;
@@ -7,13 +21,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 
 
 h1 {
-    font-family: cinzel, arial, helvetica;
-    overflow: auto;
+    font-family: 'Cinzel', arial, helvetica;
+    overflow: hidden;
     letter-spacing: 2px;
     text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
     padding-left: 0%;
@@ -30,6 +45,8 @@ h1 {
     color: rgb(255, 255, 255);
 
 }
+
+/* Navigation */
 
 .nav-container {
     position: relative;
@@ -58,8 +75,9 @@ h1 {
 
 .dropdownmenu {
     text-align: center;
-    font-size: large;
-    position: absolute;
+    font-size: 1em;
+    overflow: auto;
+    position: relative;
     display: none;
     top: 100%;
     left: 38%;
@@ -99,19 +117,19 @@ h1 {
 }
 
 
-
+/* Grid and Cards Setup */
 
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     gap: 5%;
 }
 
 .card {
     perspective: 1000px;
     /* Add perspective for 3D effect */
-
+    max-width: 100%;
 
 }
 
@@ -133,33 +151,234 @@ h1 {
     /* Flip on hover */
 }
 
+.card:hover .card-back {
+    opacity: 1;
+    /* Fade in the bottom half on hover */
+}
+
 .card-front,
 .card-back {
-    text-align: center;
+    backface-visibility: hidden;
+    /* Hide backface during flip */
+    font-family: cinzel;
+    max-width: 100%;
+    font-weight: bold;
+    text-align: left;
     position: absolute;
     width: 100%;
     height: 95%;
-    backface-visibility: hidden;
-    /* Hide backface during flip */
-    margin-top: -550px;
+    margin-top: -30em;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: 10%;
+    border-style: ridge;
+    border-width: .35em;
 }
 
+/* Card Decoration */
+
+
 .card-front {
-    background-color: #ffffff65;
+    background-color: #4a4a4a;
     /* Front side background */
-    height: 65%;
+    height: 70%;
 }
 
 .card-back {
-    height: 85%;
-    background-color: #ffffff4c;
+    opacity: 0;
+    /* Start with the bottom half hidden */
+    transition: opacity 1s ease;
+    /* Smooth transition for opacity changes */
+    height: 100%;
+    background-color: #525151;
     /* Back side background */
     transform: rotateY(180deg);
     /* Initially hidden */
+
 }
 
 img {
-    width: 80%;
-  
+    width: 90%;
+    border-radius: 10%;
+    border-style: double;
+    border-color: #000000;
+    margin-left: 4%;
+    border-width: .5em;
     object-fit: cover;
+}
+
+
+/* Card Colors */
+
+
+.Magicone {
+    font-size: .80em;
+    border-style: solid;
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+}
+
+.classdesc {
+
+    background-color: #a6a0a0;
+    border-style: solid;
+    border-width: .5em;
+}
+
+
+/* Ranger */
+
+
+#cardonefront {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 136, 9, 0.886);
+
+}
+
+
+#rangerback {
+    background-color: orange;
+
+}
+
+
+/* Botslayer */
+
+#cardtwofront {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+
+}
+
+#botslayerback {
+    background-color: red;
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .nav-container {
+        position: relative;
+        background-color: #ed0606c2;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .dropdownmenu {
+        text-align: center;
+        font-size: .75em;
+        overflow: auto;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 10%;
+        width: 80%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: 10px;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 5px 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+        gap: 5%;
+    }
+
+    .card-front,
+    .card-back {
+        backface-visibility: hidden;
+        /* Hide backface during flip */
+        font-family: cinzel;
+        max-width: 100%;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        margin-top: -20em;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 1.5;
+        border-radius: 10%;
+        border-style: ridge;
+        border-width: .35em;
+    }
+
+    .card-back {
+    
+    height: 115%;
+
+
+    }
+
+    .Magicone {
+        font-size: .75em;
+        border-style: solid;
+        background-color: #4a4a4a;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .classdesc {
+        font-size: .60em;
+
+        background-color: #a6a0a0;
+        border-style: solid;
+        border-width: .5em;
+    }
 }
