@@ -7,7 +7,7 @@
         background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
-        
+
         color: #fff;
         padding: 5px;
     }
@@ -26,6 +26,7 @@
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
 
     .dropdownmenu {
@@ -44,7 +45,7 @@
         white-space: nowrap;
         border-radius: 20px;
     }
-    
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -53,7 +54,7 @@
         z-index: 1;
         white-space: nowrap;
     }
-    
+
 
     /* Dropdown animation */
     .dropdownmenu.active {
@@ -117,17 +118,17 @@
         font-family: "Jersey 25", sans-serif;
         font-weight: 400;
         font-style: normal;
-      }
-      
+    }
+
 
     h3 {
         text-align: center;
-       font-family: 'Jersey 25';
-       font-size: 1.5em;
+        font-family: 'Jersey 25';
+        font-size: 1.5em;
         border-radius: .7em;
         border-style: double;
         margin: 0;
-        margin-left: 38.80%;
+        margin-left: 39%;
         display: block;
         padding: .8%;
         width: 20%;
@@ -217,11 +218,47 @@
 
 
     .cinzel {
-        font-family: "Cinzel" ;
+        font-family: "Cinzel";
         font-optical-sizing: auto;
         font-weight: 30px;
         font-style: normal;
     }
+
+    #toggle-button {
+
+        z-index: 9999;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-left: 47.25%;
+        display: flex;
+        background-color: #000000;
+        margin-top: 1em;
+        border-radius: 1em;
+        width: 10em;
+
+    }
+
+    .mapmain, .iframe-overlay {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        display: flex;
+    }
+
+
+    #iframe {
+        position: relative;
+        height: 46em;
+        width: 50%;
+        z-index: 1;
+        border-radius: 10px;
+        margin-top: 4em;
+        align-content: flex-end;
+        display: none;
+    }
+  
 
 }
 
