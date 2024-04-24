@@ -147,10 +147,11 @@ h1 {
 .card-front {
     background-color: #ffffff65;
     /* Front side background */
-    height: 75%;
+    height: 65%;
 }
 
 .card-back {
+    height: 85%;
     background-color: #ffffff4c;
     /* Back side background */
     transform: rotateY(180deg);
@@ -159,5 +160,6 @@ h1 {
 
 img {
     width: 80%;
+  
     object-fit: cover;
 }
