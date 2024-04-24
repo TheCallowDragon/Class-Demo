@@ -1,4 +1,35 @@
+body {
+    background-color: rgb(222, 219, 219);
+    line-height: 1;
+    margin: 0 0;
+    padding: 0;
+    background-image: url(../assets/announcement/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+
+
+h1 {
+    font-family:  cinzel,arial, helvetica  ;
+    overflow: auto;
+    letter-spacing: 2px;
+    text-shadow:4px 10px 10px rgba(186, 186, 186, 0.256);
+    padding-left: 0%;
+    vertical-align: baseline;
+    margin: 0;
+    text-align: center;
+    border-color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #000000, #484848); 
+    border: 2px solid;
+    border-style: solid;
+    width: 100%;
+    font-size: 300%;
+    -webkit-text-stroke: .8px rgb(195, 9, 9);
+    color: rgb(255, 255, 255);
+
+}
 .nav-container {
     position: relative;
     background-color: #ed0606c2;
@@ -60,8 +91,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5%;
   }
   
   .card {
@@ -75,6 +106,7 @@
     width: 100%;
     height: 0;
     padding-top: 150%; /* Maintain aspect ratio */
+    padding-bottom: 75%;
     transform-style: preserve-3d; /* Maintain 3D effect */
     transition: transform .5s; /* Add transition for smooth flip */
   }
@@ -85,21 +117,26 @@
   
   .card-front,
   .card-back {
+    text-align: center;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 105%;
     backface-visibility: hidden; /* Hide backface during flip */
+    margin-top: -550px;
   }
   
   .card-front {
-    background-color: #f0f0f0; /* Front side background */
+    background-color: #ffffff65; /* Front side background */
+    height: 75%;
   }
   
   .card-back {
-    background-color: #ddd; /* Back side background */
+    background-color: #ffffff4c; /* Back side background */
     transform: rotateY(180deg); /* Initially hidden */
   }
   
   img {
-    width: 70%;
+    width: 433px;
+    height: 750px;
+    object-fit: cover;
   }
