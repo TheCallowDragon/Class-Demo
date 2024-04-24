@@ -9,11 +9,12 @@
         border: 2px solid black;
         color: #fff;
         padding: 5px;
-      }
-      .dropdownarrow {
+    }
+
+    .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-        color:white;
+        color: white;
         top: 100%;
         left: 49.8%;
         transform: translateX(-50%);
@@ -24,9 +25,10 @@
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
-      }
-      .dropdownmenu {
-        text-align: center ;
+    }
+
+    .dropdownmenu {
+        text-align: center;
         font-size: large;
         position: absolute;
         display: none;
@@ -38,24 +40,34 @@
         padding: 10px;
         z-index: 1;
         white-space: nowrap;
-      }
-      .dropdownmenu a {
+    }
+
+    .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
         text-decoration: none;
         padding: 5px 0;
         z-index: 1;
         white-space: nowrap;
-      }
-      /* Dropdown animation */
-      .dropdownmenu.active {
+    }
+
+    /* Dropdown animation */
+    .dropdownmenu.active {
         display: block;
         animation: slideDown 0.5s ease;
-      }
-      @keyframes slideDown {
-        0% { opacity: 0; transform: translateY(-10px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     .easter {
         text-align: left;
@@ -65,16 +77,16 @@
     }
 
     h1 {
-        font-family:  cinzel,arial, helvetica  ;
+        font-family: cinzel, arial, helvetica;
         overflow: auto;
         letter-spacing: 2px;
-        text-shadow:4px 10px 10px rgba(186, 186, 186, 0.256);
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
         padding-left: 0%;
         vertical-align: baseline;
         margin: 0;
         text-align: center;
         border-color: rgb(255, 255, 255);
-        background: linear-gradient(to right, #000000, #484848); 
+        background: linear-gradient(to right, #000000, #484848);
         border: 2px solid;
         border-style: solid;
         width: 100%;
@@ -101,7 +113,7 @@
 
     h3 {
         text-align: center;
-       
+
         border-radius: 20%;
         border-style: double;
         margin: 0;
@@ -199,7 +211,7 @@
         font-optical-sizing: auto;
         font-weight: 30px;
         font-style: normal;
-      }
+    }
 
 }
 
