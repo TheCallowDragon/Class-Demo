@@ -55,6 +55,29 @@ h1 {
 
 }
 
+
+h2 {
+    
+    font-family: 'Cinzel', arial, helvetica;
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+    padding-left: 0%;
+    vertical-align: baseline;
+    margin-top: .5em;
+    text-align: center;
+    
+   
+    width: 100%;
+    font-size: 300%;
+    -webkit-text-stroke: .8px rgb(195, 9, 9);
+    color: rgb(255, 255, 255);
+
+
+
+}
+
+
 /* Navigation */
 
 .nav-container {
