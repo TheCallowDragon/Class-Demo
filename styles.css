@@ -1,147 +1,211 @@
 @media only screen and (min-width: 1200px) {
     /* CSS rules for large devices */
 
-.easter {
-text-align: left;
-margin-left: 2%;
-font-size: xx-small;
-margin-top: 0px;
-}
 
-h1 {
-    overflow: auto;
-    margin: auto;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    border-color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.955);
-    border: 2px solid;
-    border-style: solid;
-    width: 100%;
-    font-size: 300%;
-    -webkit-text-stroke: 1px rgb(203, 64, 64);
-    color: rgb(255, 255, 255);
+    .nav-container {
+        position: relative;
+        background-color: #ed0606c2;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+      }
+      .dropdownarrow {
+        position: absolute;
+        color:white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #faf6f6;
+        cursor: pointer;
+        z-index: 2;
+      }
+      .dropdownmenu {
+        text-align: center ;
+        font-size: large;
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 38%;
+        width: 23%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: 10px;
+        z-index: 1;
+        white-space: nowrap;
+      }
+      .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 5px 0;
+        z-index: 1;
+        white-space: nowrap;
+      }
+      /* Dropdown animation */
+      .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+      }
+      @keyframes slideDown {
+        0% { opacity: 0; transform: translateY(-10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
 
-}
-
-h2 {
-text-align: center;
-border: 2px solid black;
-background-color: rgba(0, 0, 0, 0.247);
-padding: 0.5;
-margin: 0;
-margin-bottom: 1%;
-margin-left: -.5%;
--webkit-text-stroke: .25px rgb(255, 255, 255);
-font-size: 150%;
-
-}
-
-
-
-h3 {
-    text-align: center;
-    border: 2px solid black;
-    margin: 0;
-    margin-left: 44.5%;
-    display: block;
-    padding: .2%;
-    width: 10%;
-    background-color: black;
-    color: gold;
-
-}
-
-
-
-
-body {
-    background-color: rgb(222, 219, 219);
-    line-height: 1;
-    margin: 0 0;
-    padding: 0;
-    background-image: url(assets/announcement/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-}
-
-
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.left {
-    flex: 1;
-    width: 50%;
-    position: absolute;
-
-}
-
-.right {
-
-flex: 1;
-width: 50%;
-position: absolute;
-}
-
-.left img {
-    width: 25%;
-    height: auto;
-    display: block;
-    position: relative;
-    margin-right: 0%;
-}
-
-.right img {
-    width: 25%;
-    height: auto;
-    display: block;
-    margin-left: 175%;
-    position: relative;
-}
-
-
-
-
-main {
-max-width: 35%;
-margin-left: 32%;
-border: 2px;
-border-style:solid;
-border-radius: 15%;
-padding: 1%;
-margin-top: 5%;
-background-color: rgba(128, 128, 128, 0.693);
-
-}
-
-footer {
-    text-align: left;
-   
-    margin-top: 30%;
-    margin-left: 15%;
+    .easter {
+        text-align: left;
+        margin-left: 2%;
+        font-size: xx-small;
+        margin-top: 0px;
     }
-    
-p {
-margin-top: 0%;
 
-}
+    h1 {
+        font-family:  cinzel,arial, helvetica  ;
+        overflow: auto;
+        letter-spacing: 2px;
+        text-shadow:4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.955);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+
+    }
+
+    h2 {
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.247);
+        padding: 0.5;
+        margin: 0;
+        margin-bottom: 1%;
+        margin-left: -.5%;
+        -webkit-text-stroke: .25px rgb(255, 255, 255);
+        font-size: 150%;
+
+    }
 
 
 
+    h3 {
+        text-align: center;
+       
+        border-radius: 20%;
+        border-style: double;
+        margin: 0;
+        margin-left: 38.80%;
+        display: block;
+        padding: .8%;
+        width: 20%;
+        background-color: black;
+        color: gold;
+
+    }
+
+
+
+
+    body {
+        background-color: rgb(222, 219, 219);
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(assets/announcement/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex: 1;
+        width: 50%;
+        position: absolute;
+
+    }
+
+    .right {
+
+        flex: 1;
+        width: 50%;
+        position: absolute;
+    }
+
+    .left img {
+        width: 25%;
+        height: auto;
+        display: block;
+        position: relative;
+        margin-right: 0%;
+    }
+
+    .right img {
+        width: 25%;
+        height: auto;
+        display: block;
+        margin-left: 175%;
+        position: relative;
+    }
+
+
+
+
+    main {
+        max-width: 35%;
+        margin-left: 32%;
+        border: 2px;
+        border-style: solid;
+        border-radius: 15%;
+        padding: 1%;
+        margin-top: 5%;
+        background-color: rgba(128, 128, 128, 0.693);
+
+    }
+
+    footer {
+        text-align: left;
+
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+
+    p {
+        margin-top: 0%;
+
+    }
+
+
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+      }
 
 }
 
 
 button {
-background-color: red;
-color: gold;
+    background-color: red;
+    color: gold;
 
 }
 
@@ -152,6 +216,7 @@ color: gold;
 
 
 @media only screen and (max-width: 600px) {
+
     /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
     h1 {
@@ -169,22 +234,22 @@ color: gold;
         font-size: 300%;
         -webkit-text-stroke: 1px rgb(203, 64, 64);
         color: rgb(255, 255, 255);
-    
+
     }
-    
+
     h2 {
-    text-align: center;
-    border: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.247);
-    padding: .5%;
-    margin: 0;
-    -webkit-text-stroke: .25px rgb(255, 255, 255);
-    font-size: 150%;
-    
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgba(0, 0, 0, 0.247);
+        padding: .5%;
+        margin: 0;
+        -webkit-text-stroke: .25px rgb(255, 255, 255);
+        font-size: 150%;
+
     }
-    
-    
-    
+
+
+
     h3 {
         text-align: center;
         border: 2px solid black;
@@ -193,12 +258,12 @@ color: gold;
         display: block;
         padding: .2%;
         width: 30%;
-    
+
     }
-    
-    
-    
-    
+
+
+
+
     body {
         background-color: rgb(222, 219, 219);
         line-height: 1;
@@ -207,54 +272,57 @@ color: gold;
         background-image: url(assets/announcement/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed; 
+        background-attachment: fixed;
     }
-    
-    
-    
+
+
+
     .left {
-    position: absolute;
-    align-content:left ;
-    float: left;
-    
+        position: absolute;
+        align-content: left;
+        float: left;
+
     }
+
     .left img {
-    position: relative;
-    margin-left: 0%;
-    width: 30%;
-    display: block;
-    z-index: 0;
+        position: relative;
+        margin-left: 0%;
+        width: 30%;
+        display: block;
+        z-index: 0;
     }
-    .right{
-    position: absolute;
-    float: right;
-    margin-left: 35%;
+
+    .right {
+        position: absolute;
+        float: right;
+        margin-left: 35%;
     }
+
     .right img {
-        padding-left: 56% ;
+        padding-left: 56%;
         display: block;
         z-index: 0;
         width: 47%;
         position: relative;
-        
+
     }
-    
-    
-    
+
+
+
     main {
-    max-width: 35%;
-    margin-left: 32%;
-    border: 2px solid;
-    padding: 1%;
-    margin-top: 5%;
-    background-color: rgba(128, 128, 128, 0.512);
-    
+        max-width: 35%;
+        margin-left: 32%;
+        border: 2px solid;
+        padding: 1%;
+        margin-top: 5%;
+        background-color: rgba(128, 128, 128, 0.512);
+
     }
 
 
-footer {
-text-align: center;
-padding: 80%;
-}
+    footer {
+        text-align: center;
+        padding: 80%;
+    }
 
 }
