@@ -1,7 +1,12 @@
 @media only screen and (min-width: 1200px) {
     /* CSS rules for large devices */
 
-
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    
+    }
+    
     .nav-container {
         position: relative;
         background-color: rgba(0, 0, 0, 0.525);
