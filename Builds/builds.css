@@ -22,11 +22,12 @@ a:hover {
 }
 
 body {
+    animation: cycleBackgrounds 240s linear infinite;
     background-color: rgb(222, 219, 219);
     line-height: 1;
     margin: 0 0;
     padding: 0;
-    background-image: url(../assets/background2.png);
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -145,6 +146,30 @@ h2 {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes cycleBackgrounds {
+    0% {
+        background-image: url('../assets/announcement/background.jpg');
+        background-position: 0% 0%, 0% 0%;
+        
+    }
+
+
+    33.33% {
+        background-image: url('../assets/background2.png');
+        background-position: 0% 25%, 0% 25%;
+    }
+
+    66.66% {
+        background-image: url('../assets/Background3.png');
+        background-position: 0% 50%, 0% 50%;
+    }
+
+    100% {
+        background-image: url('../assets/Background4.jpg');
+        background-position: 0% 100%, 0% 100%;
     }
 }
 
