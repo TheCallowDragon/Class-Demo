@@ -78,7 +78,7 @@ h2 {
 }
 
 
-.style + h2,p {
+.style  h2,p {
 border-radius: 2px solid black;
 
 
