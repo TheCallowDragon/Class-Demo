@@ -1,0 +1,420 @@
+/* Basic CSS for header elements */
+.cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+a {
+    color: rgb(0, 0, 0)
+}
+
+a:hover {
+    color: gold
+}
+
+body {
+    background-color: rgb(222, 219, 219);
+    line-height: 1;
+    margin: 0 0;
+    padding: 0;
+    background-image: url(../assets/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+
+
+h1 {
+    font-family: 'Cinzel', arial, helvetica;
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+    padding-left: 0%;
+    vertical-align: baseline;
+    margin: 0;
+    text-align: center;
+    border-color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #000000, #484848);
+    border: 2px solid;
+    border-style: solid;
+    width: 100%;
+    font-size: 300%;
+    -webkit-text-stroke: .8px rgb(195, 9, 9);
+    color: rgb(255, 255, 255);
+
+}
+
+
+h2 {
+    
+    font-family: 'Cinzel', arial, helvetica;
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+    padding-left: 0%;
+    vertical-align: baseline;
+    margin-top: .5em;
+    text-align: center;
+    
+   
+    width: 100%;
+    font-size: 300%;
+    -webkit-text-stroke: .8px rgb(195, 9, 9);
+    color: rgb(255, 255, 255);
+
+
+
+}
+
+
+.style + h2,p {
+border-radius: 2px solid black;
+
+
+}
+
+
+/* Navigation */
+
+.nav-container {
+    position: relative;
+    background-color: #ed0606c2;
+    border-color: black;
+    border: 2px solid black;
+    color: #fff;
+    padding: 5px;
+}
+
+.dropdownarrow {
+    position: absolute;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    color: white;
+    top: 100%;
+    left: 49.8%;
+    transform: translateX(-50%);
+    width: 10;
+    height: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #d1b814;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.dropdownmenu {
+    text-align: center;
+    font-size: 1em;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    top: 100%;
+    left: 34.5%;
+    width: 30%;
+    transform: translateY(0%);
+    background-color: #333;
+    padding: .25%;
+    z-index: 1;
+    white-space: nowrap;
+    border-radius: 20px;
+}
+.dropdownmenu a {
+    display: inline-block;
+    color: #b88e11;
+    text-decoration: none;
+    padding: 1% 0;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* Dropdown animation */
+.dropdownmenu.active {
+    display: block;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Grid and Cards Setup */
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 250em;
+    gap: 10%;
+    border: 2px solid black;
+  }
+
+  .card-container {
+    background-color: rgba(0, 0, 0, 0.53);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    border: 15px double black;
+    border-radius: 1em ;
+  }
+
+.card {
+    perspective: 1000px;
+    /* Add perspective for 3D effect */
+    width: 400px; /* Set the width of the card */
+    height: 700px; /* Set the height of the card */
+
+   
+}
+
+
+
+
+.card-inner {
+    position: relative;
+    width: 100%;
+ 
+    padding-top: 150%;
+    /* Maintain aspect ratio */
+
+    transform-style: preserve-3d;
+    /* Maintain 3D effect */
+    transition: transform .5s;
+    /* Add transition for smooth flip */
+}
+
+.card:hover .card-inner {
+    transform:  scale(1) rotateY(180deg);
+    /* Flip on hover */
+    
+}
+
+.card:hover .card-back {
+    opacity: 1;
+    /* Fade in the bottom half on hover */
+}
+
+.card-front,
+.card-back {
+    top: -1px;
+    backface-visibility: hidden;
+    /* Hide backface during flip */
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: 25px;
+    border-style: ridge;
+    border-width: .35em;
+    width: 300px;
+    height: 250px;
+}
+
+/* Card Decoration */
+
+
+.card-front {
+    background: linear-gradient(to right, #272727, #4f4c4c);
+    /* Front side background */
+   
+}
+
+.card-back {
+    width: 500px; /* Set the width of the card */
+    height: 700px;
+    opacity: 0;
+    /* Start with the bottom half hidden */
+    transition: opacity 1s ease;
+    /* Smooth transition for opacity changes */
+   
+    background-color: #525151;
+    /* Back side background */
+    transform: rotateY(180deg);
+    /* Initially hidden */
+  
+}
+
+
+img.icon {
+    position: absolute;
+    margin-left: 32.24%;
+    width: 35%;
+    margin-top: 7%;
+    
+    }
+
+img {
+    width: 90%;
+    border-radius: 10%;
+    border-style: double;
+    border-color: #000000;
+    margin-left: 4%;
+    border-width: .5em;
+    object-fit: cover;
+}
+
+
+/* Card Colors */
+
+
+.Magicone {
+    font-size: .80em;
+    border-style: solid;
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+}
+
+.classdesc {
+    font-size: .75em;
+    background-color: #a6a0a0;
+    border-style: solid;
+    border-width: .5em;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .nav-container {
+        position: relative;
+        background-color: #ed0606c2;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .dropdownmenu {
+        text-align: center;
+        font-size: .75em;
+        overflow: auto;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 10%;
+        width: 80%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: 10px;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 5px 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    .card-front,
+    .card-back {
+        backface-visibility: hidden;
+        /* Hide backface during flip */
+        font-family: cinzel;
+        max-width: 100%;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        margin-top: -20em;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 1.5;
+        border-radius: 15px;
+        border-style: ridge;
+        border-width: .35em;
+    }
+
+    .card-back {
+    
+    height: 115%;
+
+
+    }
+
+    .Magicone {
+        font-size: .75em;
+        border-style: solid;
+        background-color: #4a4a4a;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .classdesc {
+        font-size: .60em;
+
+        background-color: #a6a0a0;
+        border-style: solid;
+        border-width: .5em;
+    }
+}

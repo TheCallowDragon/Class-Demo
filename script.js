@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
       
-        var iframe = document.getElementById('iframe');
-        iframe.contentWindow.scrollTo(0, iframe.contentDocument.body.scrollHeight / 2);
 
 });
+
+var iframe = document.getElementById('iframe');
+iframe.contentWindow.scrollTo(0, iframe.contentDocument.body.scrollHeight / 2);
