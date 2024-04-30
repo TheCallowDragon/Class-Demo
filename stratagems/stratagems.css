@@ -27,7 +27,6 @@ body {
     margin: 0 0;
     padding: 0;
     background-image: url(../assets/Background3.png);
-   
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -41,7 +40,7 @@ h1 {
     overflow: hidden;
     letter-spacing: 2px;
     text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
-    padding-left: 0%;
+    padding-left: 1.5%;
     vertical-align: baseline;
     margin: 0;
     text-align: center;
@@ -63,13 +62,16 @@ h2 {
     overflow: hidden;
     letter-spacing: 2px;
     text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
-    padding-left: 0%;
-    vertical-align: baseline;
     margin-top: .5em;
     text-align: center;
-    
-   
-    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgba(255, 217, 0, 0.756);
+    box-shadow:rgb(20, 15, 15);
+    background-color: #292727b8;
+    width: 37%;
+    margin-left: 32%;
     font-size: 300%;
     -webkit-text-stroke: .8px rgb(195, 9, 9);
     color: rgb(255, 255, 255);
@@ -78,6 +80,11 @@ h2 {
 
 }
 
+h2#Declaration {
+    margin-left: 25% ;
+    width: 50%;
+    background-color: #000000c0;
+}
 
 .style  h2,p {
 border-radius: 2px solid black;
@@ -90,7 +97,7 @@ border-radius: 2px solid black;
 
 .nav-container {
     position: relative;
-    background-color: #ed0606c2;
+    background-color: #585858a6;
     border-color: black;
     border: 2px solid black;
     color: #fff;
@@ -116,7 +123,7 @@ border-radius: 2px solid black;
 .dropdownmenu {
     text-align: center;
     font-size: 1em;
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
     display: none;
     top: 100%;
@@ -159,12 +166,6 @@ border-radius: 2px solid black;
 
 /* Grid and Cards Setup */
 
-#backpacks {
-position: relative;
-top: 100%;
-left: -100%;
-
-}
 
 .grid-container {
     display: grid;
@@ -172,24 +173,38 @@ left: -100%;
     width: 100%;
     height: 100%;
     gap: 2%;
-    border: 2px solid black;
+   
   }
+
+
+  .StratagemType {
+    color: gold;
+    text-align: center;
+    background-color: #2d2c2c9e;
+    border-radius: 10px;
+    padding-bottom: .2em;
+    width: 20%;
+    margin-left:40% ;
+
+  }
+
+
+
 
   .card-container {
     background-color: rgba(0, 0, 0, 0.53);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0%;
-    padding-left: 5%;
+    padding-left: 8%;
     border: 15px double black;
     border-radius: 1em ;
   }
 
 .card {
     perspective: 1000px;
-    /* Add perspective for 3D effect */
-    width: 400px; /* Set the width of the card */
-    height: 700px; /* Set the height of the card */
+    width: 400px;
+    height: 700px; 
 
    
 }
@@ -201,32 +216,24 @@ left: -100%;
     position: relative;
     width: 100%;
     height: 20%;
- 
     padding-top: 150%;
-    /* Maintain aspect ratio */
-
     transform-style: preserve-3d;
-    /* Maintain 3D effect */
     transition: transform .5s;
-    /* Add transition for smooth flip */
 }
 
 .card:hover .card-inner {
     transform:  scale(1) rotateY(180deg);
-    /* Flip on hover */
     
 }
 
 .card:hover .card-back {
     opacity: 1;
-    /* Fade in the bottom half on hover */
 }
 
 .card-front,
 .card-back {
     top: -1px;
     backface-visibility: hidden;
-    /* Hide backface during flip */
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
@@ -249,16 +256,12 @@ left: -100%;
 }
 
 .card-back {
-    width: 500px; /* Set the width of the card */
+    width: 500px; 
     height: 700px;
     opacity: 0;
-    /* Start with the bottom half hidden */
     transition: opacity 1s ease;
-    /* Smooth transition for opacity changes */
     background-color: #525151;
-    /* Back side background */
     transform: rotateY(180deg);
-    /* Initially hidden */
   
 }
 

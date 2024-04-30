@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stratagems.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
             <a href="https://divers.gg/liberation-map">Galactic War |</a>
         </nav>
     </div>
-    <h2>Helldivers 2 Stratagems</h2>
+    <h2 id="Declaration">Support and Stratagems</h2>
 
 
 
@@ -36,7 +36,7 @@
     <div class="grid-container">
         <div class="style">
             <h2>Supply Stratagems</h2>
-            <p>Supply Stratagems can provide the player with:</p>
+            <p class="StratagemType">Supply Stratagems can provide the player with:</p>
             <!--card-->
             <div class="card-container">
             <div class="card">  
@@ -77,20 +77,15 @@
                     </div>
                     <div  class="card-back">
                         <p  class="Magicone"></p>
-                        <img src="" alt="Image 1">
+                        <img src="../assets/Weapons/eat2.jpg" alt="Image 1">
                         <p class="Magicone"></p>
                         <ul class="classdesc">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-    
+                            <li>Cost: 3000</li>
+                            <li>Cooldown: 120 Seconds (2m)</li>
+                            <li>Capacity: 1 Shot</li>
+                            <li>Calls Down Two Launchers</li>
+                            
+                            
                         </ul>
                     </div>
                 </div>
@@ -131,24 +126,50 @@
                     </div>
                     <div  class="card-back">
                         <p  class="Magicone"></p>
-                        <img src="" alt="Image 1">
+                        <img src="../assets/Weapons/rail2.jpg" alt="Image 1">
                         <p class="Magicone"></p>
                         <ul class="classdesc">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                            <li>Cost: 10,000</li>
+                            <li>Ammo Capacity: 1</li>
+                            <li>Spare Rounds: 20</li>
+                            <li>Total Shots: 20</li>
+                            <li>Damage: 600</li>
+                            <p>Traits</p>
+                            <li>Heavy Armor Penetrating</li>
+                            <li>Charge to shoot</li>
+                       
     
                         </ul>
                     </div>
                 </div>
             </div>
+
+
+            <!--card-->
+            <div class="card">  
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p  class="Magicone">Airburst Rocket Launcher</p>
+                        <img class="icon" src="../assets/Weapons/Airburst_Rocket_Launcher.webp" alt="Image 1">
+                    </div>
+                    <div  class="card-back">
+                        <p  class="Magicone"></p>
+                        <img src="" alt="Image 1">
+                        <p class="Magicone"></p>
+                        <ul class="classdesc">
+                            <li></li>
+                          
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
                <!--card-->
                <div class="card">  
                 <div class="card-inner">
@@ -424,7 +445,7 @@
 
         <div class="style">
             <h2>Defensive Stratagems</h2>
-            <p>Defensive Stratagems grant the player:</p>
+            <p class="StratagemType">Defensive Stratagems can provide the player with:</p>
             <div class="card-container">
                      <!--card-->
                <div class="card">  
@@ -470,7 +491,7 @@
 
         <div class="style">
             <h2>Offensive Stratagems</h2>
-            <p>Offensive Stratagems allow the player to call down:</p>
+            <p class="StratagemType">Offensive Stratagems can provide the player with:</p>
             <div class="card-container">
                      <!--card-->
                <div class="card">  
@@ -514,9 +535,9 @@
 
         <div class="style">
             <h2>Mission Stratagems</h2>
-            <p>Mission Stratagems are granted to the player by Helldiver Command to deal with certain mission-specific
+            <p class="StratagemType">Mission Stratagems are granted to the player by Helldiver Command to deal with certain mission-specific
                 problems as well as basic stratagems that are always available.</p>
-            <p>Examples include:</p>
+            
             <div class="card-container">
 
 
