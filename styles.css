@@ -19,6 +19,8 @@
         padding: 5px;
     }
 
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -273,7 +275,7 @@
         font-style: normal;
     }
 
-/* Galactic Map */
+    /* Galactic Map */
 
     .mapmain,
     .iframe-overlay {
