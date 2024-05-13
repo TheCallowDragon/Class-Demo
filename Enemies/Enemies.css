@@ -191,6 +191,7 @@ h2 {
 }
 
 .category-container img {
+    max-width: 100%;
     width: 50%;
     margin-left: 27%;
 }

@@ -226,6 +226,7 @@ h2 {
 }
 
 img {
+    max-width: 100%;
     width: 90%;
     border-radius: 10%;
     border-style: double;
@@ -544,6 +545,7 @@ h2 {
 }
 
 img {
+    max-width: 100%;
     width: 90%;
     border-radius: 10%;
     border-style: double;
