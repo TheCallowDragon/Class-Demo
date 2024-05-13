@@ -107,7 +107,7 @@ h2 {
 
 .dropdownmenu {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.25em;
     overflow: hidden;
     position: relative;
     display: none;
@@ -171,7 +171,7 @@ h2 {
 
 /* Apply styles to the paragraphs within each category container */
 .category-container p {
-    
+
     margin-left: 41%;
     border: #000000;
     border-radius: 10px;
@@ -202,13 +202,13 @@ h2 {
     border-radius: 30PX;
 }
 
-.category-container .LABEL  {
-width: 100%;
-padding-left: 38%;
-text-align: center;
-margin-left: 0%;
-color: gold;
-background-color: #0f0f0fd3;
+.category-container .LABEL {
+    width: 100%;
+    padding-left: 38%;
+    text-align: center;
+    margin-left: 0%;
+    color: gold;
+    background-color: #0f0f0fd3;
 
 }
 
@@ -232,22 +232,22 @@ background-color: #0f0f0fd3;
         font-weight: 30px;
         font-style: normal;
     }
-    
+
     * {
         max-width: 100%;
         box-sizing: border-box;
-    
+
     }
-    
-    
+
+
     a {
         color: rgb(0, 0, 0)
     }
-    
+
     a:hover {
         color: gold
     }
-    
+
     body {
         line-height: 1;
         margin: 0 0;
@@ -258,9 +258,9 @@ background-color: #0f0f0fd3;
         background-attachment: fixed;
         max-width: 100%;
     }
-    
-    
-    
+
+
+
     h1 {
         font-family: 'Cinzel', arial, helvetica;
         overflow: hidden;
@@ -278,12 +278,12 @@ background-color: #0f0f0fd3;
         font-size: 2em;
         -webkit-text-stroke: .8px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
-    
+
     }
-    
-    
+
+
     h2 {
-    
+
         font-family: 'Cinzel', arial, helvetica;
         overflow: hidden;
         letter-spacing: 2px;
@@ -293,20 +293,20 @@ background-color: #0f0f0fd3;
         vertical-align: baseline;
         margin-top: .5em;
         text-align: center;
-    
-    
+
+
         width: 100%;
         font-size: 300%;
         -webkit-text-stroke: .8px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
-    
-    
-    
+
+
+
     }
-    
-    
+
+
     /* Navigation */
-    
+
     .nav-container {
         position: relative;
         background-color: #0000007c;
@@ -315,7 +315,7 @@ background-color: #0f0f0fd3;
         color: #fff;
         padding: 5px;
     }
-    
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -331,7 +331,7 @@ background-color: #0f0f0fd3;
         cursor: pointer;
         z-index: 2;
     }
-    
+
     .dropdownmenu {
         text-align: center;
         font-size: .65em;
@@ -348,7 +348,7 @@ background-color: #0f0f0fd3;
         white-space: nowrap;
         border-radius: 20px;
     }
-    
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -357,30 +357,30 @@ background-color: #0f0f0fd3;
         z-index: 1;
         white-space: nowrap;
     }
-    
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
         animation: slideDown 0.5s ease;
     }
-    
+
     /* Nav Bar Animation */
-    
+
     @keyframes slideDown {
         0% {
             opacity: 0;
             transform: translateY(-10px);
         }
-    
+
         100% {
             opacity: 1;
             transform: translateY(0);
         }
     }
-    
-    
+
+
     /* main */
-    
+
     .column-container {
         column-count: 2;
         /* Divide content into two columns */
@@ -388,14 +388,14 @@ background-color: #0f0f0fd3;
         /* Set the gap between columns as a percentage */
         column-rule: 2px solid #000000;
         /* Define column rule */
-    
+
     }
-    
+
     .category-container {
         break-inside: avoid-column;
         margin-left: 0%;
     }
-    
+
     /* Apply styles to the paragraphs within each category container */
     .category-container p {
         border: #000000;
@@ -404,12 +404,12 @@ background-color: #0f0f0fd3;
         background-color: rgb(31, 31, 31);
         color: rgb(226, 226, 226);
     }
-    
+
     .category-container img {
         width: 50%;
         margin-left: 27%;
     }
-    
+
     .section {
         background-color: #333;
         width: 90%;
@@ -424,13 +424,13 @@ background-color: #0f0f0fd3;
         font-size: 1em;
     }
 
-    
-    .section .LABEL  {
-    width: 100%;
-    color: gold;
-    background-color: #0f0f0fd3;
-    font-size: .5em;
+
+    .section .LABEL {
+        width: 100%;
+        color: gold;
+        background-color: #0f0f0fd3;
+        font-size: .5em;
     }
-    
-   
+
+
 }

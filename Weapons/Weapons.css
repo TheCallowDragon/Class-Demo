@@ -1,0 +1,239 @@
+@media only screen and (min-width: 1200px) {
+
+    /* CSS rules for large devices */
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+    }
+
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .hidden {
+        display: none;
+       
+    }
+
+    .Class ul,a,p {
+        
+        font-size: .65em;
+        color: #ffffff;
+        text-align: left;
+
+    }
+
+    a {
+        color: wheat;
+    }
+
+    a:hover {
+        color: rgb(255, 60, 0)
+    }
+
+    body {
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(../assets/Wallpaper4.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+    }
+
+
+
+    h1 {
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background: linear-gradient(to right, #000000, #484848);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+
+    }
+
+
+    h2 {
+
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+        padding-left: 0%;
+        margin-right: 3%;
+        vertical-align: baseline;
+        margin-top: .5em;
+        text-align: center;
+
+
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+
+
+
+    }
+
+
+    /* Navigation */
+
+    .nav-container {
+        position: relative;
+        background-color: #0000007c;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .dropdownmenu {
+        text-align: center;
+        font-size: 2em;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 34.5%;
+        width: 30%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: .25%;
+        z-index: 1;
+        white-space: nowrap;
+        border-radius: 20px;
+    }
+
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 1% 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+
+    /* Nav Bar Animation */
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .category-container {
+        display: flexbox;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+
+
+    }
+
+    .column-container {
+        padding: 1%;
+        border-radius: 20px;
+        margin-left: 25%;
+        margin-top: 5%;
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #333232;
+    }
+
+    .column-container p,
+    ul {
+        font-size: 1.5em;
+        color: wheat;
+    }
+
+
+    .Weapon img {
+        width: 35%;
+
+    }
+
+    .Weapon {
+        background-color: rgba(66, 66, 66, 0.452);
+        width: 35%;
+        margin-left: 32%;
+        border-radius: 25px;
+    }
+
+
+
+    .Class {
+        width: 75%;
+        background-color: #000000e8;
+        margin-left: 12%;
+        border-radius: 25px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .Class h2 {
+        font-size: 3em;
+
+
+
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Not at all complete (Looks different on mobile vs desktop view)
+    /* CSS rules for extra small devices */
+
+
+}
