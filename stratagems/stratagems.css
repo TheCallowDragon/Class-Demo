@@ -59,6 +59,7 @@ h1 {
 h2 {
     
     font-family: 'Cinzel', arial, helvetica;
+    font-size: .2em;
     overflow: hidden;
     letter-spacing: 2px;
     text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
@@ -70,9 +71,9 @@ h2 {
     border-color: rgba(255, 217, 0, 0.756);
     box-shadow:rgb(20, 15, 15);
     background-color: #292727b8;
-    width: 37%;
-    margin-left: 32%;
-    font-size: 300%;
+    width: 100%;
+    margin-left: 29%;
+ 
     -webkit-text-stroke: .8px rgb(195, 9, 9);
     color: rgb(255, 255, 255);
 
@@ -84,7 +85,19 @@ h2#Declaration {
     margin-left: 25% ;
     width: 50%;
     background-color: #000000c0;
+    font-size: 1.5em;
 }
+
+h2#Supply {
+
+    margin-left: 25% ;
+    width: 50%;
+    background-color: #2e2d2d60;
+    font-size: 1.5em;
+
+
+}
+
 
 .style  h2,p {
 border-radius: 2px solid black;
@@ -177,14 +190,14 @@ border-radius: 2px solid black;
   }
 
 
-  .StratagemType {
+  .grid-container .StratagemType {
     color: gold;
     text-align: center;
     background-color: #2d2c2c9e;
     border-radius: 10px;
     padding-bottom: .2em;
-    width: 20%;
-    margin-left:40% ;
+    width: 70%;
+    margin-left:14% ;
 
   }
 
@@ -313,16 +326,111 @@ img {
 
 @media only screen and (max-width: 600px) {
 
-
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    a {
+        color: rgb(0, 0, 0)
+    }
+    
+    a:hover {
+        color: gold
+    }
+    
+    body {
+        background-color: rgb(222, 219, 219);
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(../assets/Background3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+    }
+    
+    
+    
+    h1 {
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 1.5%;
+        vertical-align: baseline;
+        margin: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background: linear-gradient(to right, #000000, #484848);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 2em;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    
+    h2 {
+        
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+        margin-top: .5em;
+        text-align: center;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 10px;
+        border-color: rgba(255, 217, 0, 0.756);
+        box-shadow:rgb(20, 15, 15);
+        background-color: #292727b8;
+        width: 37%;
+        margin-left: 32%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    
+    
+    }
+    
+    h2#Declaration {
+        margin-left: 25% ;
+        width: 50%;
+        background-color: #000000c0;
+    }
+    
+    .style  h2,p {
+    border-radius: 2px solid black;
+    
+    
+    }
+    
+    
+    /* Navigation */
+    
     .nav-container {
         position: relative;
-        background-color: #ed0606c2;
+        background-color: #585858a6;
         border-color: black;
         border: 2px solid black;
         color: #fff;
         padding: 5px;
     }
-
+    
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -338,82 +446,178 @@ img {
         cursor: pointer;
         z-index: 2;
     }
-
+    
     .dropdownmenu {
         text-align: center;
-        font-size: .75em;
-        overflow: auto;
+        font-size: .65em;
+        overflow:hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 10%;
-        width: 80%;
+        left: 0%;
+        width: 100%;
         transform: translateY(0%);
         background-color: #333;
-        padding: 10px;
+        padding: .25%;
         z-index: 1;
         white-space: nowrap;
+        border-radius: 20px;
     }
-
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
         text-decoration: none;
-        padding: 5px 0;
+        padding: 1% 0;
         z-index: 1;
         white-space: nowrap;
     }
-
+    
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
         animation: slideDown 0.5s ease;
     }
-
+    
     @keyframes slideDown {
         0% {
             opacity: 0;
             transform: translateY(-10px);
         }
-
+    
         100% {
             opacity: 1;
             transform: translateY(0);
         }
     }
-
-
-
+    
+    
+    /* Grid and Cards Setup */
+    
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        
+      }
+    
+    
+      .StratagemType {
+        color: gold;
+        text-align: center;
+        background-color: #2d2c2c9e;
+        border-radius: 10px;
+        padding-bottom: .2em;
+        width: 20%;
+        margin-left:40% ;
+    
+      }
+    
+    
+    
+    
+      .card-container {
+        background-color: rgba(0, 0, 0, 0.53);
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        width: 100%;
+        gap: 0%;
+        padding-left: 0%;
+        border: 15px double black;
+        border-radius: 1em ;
+      }
+    
+    .card {
+        perspective: 1000px;
+        width: 350px;
+        height: 700px; 
+        
+       
+    }
+    
+    
+    
+    
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        padding-top: 150%;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+    
+    .card:hover .card-inner {
+        transform:  scale(1) rotateY(180deg);
+        
+    }
+    
+    .card:hover .card-back {
+        opacity: 1;
+    }
+    
     .card-front,
     .card-back {
+        top: -1px;
         backface-visibility: hidden;
-        /* Hide backface during flip */
-        font-family: cinzel;
-        max-width: 100%;
-        font-weight: bold;
-        text-align: left;
         position: absolute;
-        width: 100%;
-        height: 75%;
-        margin-top: -20em;
         overflow: hidden;
         white-space: nowrap;
         font-size: 1em;
         line-height: 1.5;
-        border-radius: 15px;
+        border-radius: 25px;
         border-style: ridge;
         border-width: .35em;
+        width: 300px;
+        height: 250px;
     }
-
-    .card-back {
     
-    height: 115%;
-
-
+    /* Card Decoration */
+    
+    
+    .card-front {
+        background: linear-gradient(to right, #272727, #4f4c4c);
+        /* Front side background */
+       
     }
-
+    
+    .card-back {
+        width: 500px; 
+        height: 700px;
+        opacity: 0;
+        transition: opacity 1s ease;
+        background-color: #525151;
+        transform: rotateY(180deg);
+      
+    }
+    
+    
+    img.icon {
+        position: absolute;
+        margin-left: 32.24%;
+        width: 35%;
+        margin-top: 7%;
+        
+        }
+    
+    img {
+        width: 90%;
+        border-radius: 10%;
+        border-style: double;
+        border-color: #000000;
+        margin-left: 4%;
+        border-width: .5em;
+        object-fit: cover;
+    }
+    
+    
+    /* Card Colors */
+    
+    
     .Magicone {
-        font-size: .75em;
+        font-size: .80em;
         border-style: solid;
         background-color: #4a4a4a;
         color: #fff;
@@ -421,10 +625,10 @@ img {
     }
     
     .classdesc {
-        font-size: .60em;
-
+        font-size: .75em;
         background-color: #a6a0a0;
         border-style: solid;
         border-width: .5em;
     }
+ 
 }

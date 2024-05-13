@@ -333,20 +333,152 @@ button {
 
     /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
+ 
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    /* Navigation Bar Config */
+
+    .nav-container {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.525);
+        border-color: black;
+        border: 2px solid black;
+
+        color: #fff;
+        padding: 5px;
+    }
+
+
+
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+        margin-left: .4%;
+    }
+
+    .dropdownmenu {
+        text-align: center;
+        font-size: .65em;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: .25%;
+        z-index: 1;
+        white-space: nowrap;
+        border-radius: 20px;
+    }
+
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 1% 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .fade-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black */
+        animation: fade 4s infinite;
+    }
+
+    /* Animated Background */
+
+    @keyframes cycleBackgrounds {
+        0% {
+            background-image: url('assets/announcement/background.jpg');
+            background-position: 0% 0%, 0% 0%;
+
+        }
+
+
+        33.33% {
+            background-image: url('assets/background2.png');
+            background-position: 0% 25%, 0% 25%;
+        }
+
+        66.66% {
+            background-image: url('assets/Background3.png');
+            background-position: 0% 50%, 0% 50%;
+        }
+
+        100% {
+            background-image: url('assets/Background4.jpg');
+            background-position: 0% 100%, 0% 100%;
+        }
+    }
+
+    /* Standard Styling */
+
+    .easter {
+        text-align: left;
+        margin-left: 2%;
+        font-size: .1em;
+        margin-top: 0px;
+    }
+
     h1 {
-        overflow: auto;
-        margin: auto;
+        font-family: cinzel, arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 0%;
         vertical-align: baseline;
         margin: 0;
-        padding: 0;
         text-align: center;
         border-color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.955);
+        background: linear-gradient(to right, #000000, #484848);
         border: 2px solid;
         border-style: solid;
         width: 100%;
-        font-size: 300%;
-        -webkit-text-stroke: 1px rgb(203, 64, 64);
+        font-size: 2em;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
 
     }
@@ -355,23 +487,35 @@ button {
         text-align: center;
         border: 2px solid black;
         background-color: rgba(0, 0, 0, 0.247);
-        padding: .5%;
+        padding: 0.5;
         margin: 0;
+        margin-bottom: 1%;
+        margin-left: -.5%;
         -webkit-text-stroke: .25px rgb(255, 255, 255);
         font-size: 150%;
 
     }
 
+    .jersey-25-regular {
+        font-family: "Jersey 25", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
 
     h3 {
         text-align: center;
-        border: 2px solid black;
+        font-family: 'Jersey 25';
+        font-size: 1.5em;
+        border-radius: .7em;
+        border-style: double;
         margin: 0;
-        margin-left: 36.5%;
+        margin-left: 35%;
         display: block;
-        padding: .2%;
-        width: 30%;
+        padding: .8%;
+        width: 33%;
+        background-color: black;
+        color: gold;
 
     }
 
@@ -383,60 +527,133 @@ button {
         line-height: 1;
         margin: 0 0;
         padding: 0;
-        background-image: url(assets/announcement/background.jpg);
+
+        animation: cycleBackgrounds 60s linear infinite;
+        animation-delay: 1s;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
 
 
-
-    .left {
-        position: absolute;
-        align-content: left;
-        float: left;
-
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .left img {
-        position: relative;
-        margin-left: 0%;
-        width: 30%;
-        display: block;
-        z-index: 0;
+    .left {
+        flex: 1;
+        width: 50%;
+        position: absolute;
+
     }
 
     .right {
+
+        flex: 1;
+        width: 50%;
         position: absolute;
-        float: right;
-        margin-left: 35%;
+    }
+
+    .left img {
+        width: 40%;
+        height: auto;
+        display: block;
+        position: relative;
+        margin-right: 0%;
     }
 
     .right img {
-        padding-left: 56%;
+        width: 40%;
+        height: auto;
         display: block;
-        z-index: 0;
-        width: 47%;
+        margin-left: 160%;
         position: relative;
-
     }
+
 
 
 
     main {
-        max-width: 35%;
-        margin-left: 32%;
-        border: 2px solid;
-        padding: 1%;
+        max-width: 55%;
+        font-size: 1em;
+        margin-left: 23%;
+        border: 2px;
+        border-style: solid;
+        border-radius: 15%;
+        padding: 4%;
         margin-top: 5%;
-        background-color: rgba(128, 128, 128, 0.512);
+        background-color: rgba(128, 128, 128, 0.693);
 
     }
-
 
     footer {
-        text-align: center;
-        padding: 80%;
+        text-align: left;
+
+        margin-top: 30%;
+        margin-left: 15%;
     }
 
+    p {
+        margin-top: 0%;
+
+    }
+
+
+    .cinzel {
+        font-family: "Cinzel";
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+    }
+
+    /* Galactic Map */
+
+    .mapmain,
+    .iframe-overlay {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        display: flex;
+    }
+
+
+    #iframe {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border-radius: 10px;
+        margin-top: 4em;
+        align-content: flex-end;
+        display: none;
+    }
+
+    #toggle-button {
+
+        z-index: 9999;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin-left: 33.80%;
+        display: flex;
+        background-color: #000000;
+        margin-top: 1em;
+        border-radius: 1em;
+        width: 10em;
+
+    }
+
+
 }
+
+
+button {
+    background-color: red;
+    color: gold;
+
+}
+
