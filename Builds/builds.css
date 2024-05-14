@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1670px) {
 /* Basic CSS for header elements */
 .cinzel {
     font-family: "Cinzel", serif;
@@ -314,9 +315,335 @@ img {
 
 
 
-/* for small screens */
-@media only screen and (max-width: 600px) {
 
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1670px) and (min-width: 980px) {
+    /* Basic CSS for header elements */
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    a {
+        color: rgb(0, 0, 0)
+    }
+    
+    a:hover {
+        color: gold
+    }
+    
+    body {
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(../assets/background2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+    }
+    
+    
+    
+    h1 {
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background: linear-gradient(to right, #000000, #484848);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    
+    h2 {
+    
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin-top: .5em;
+        text-align: center;
+    
+    
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    
+    
+    }
+    
+    
+    /* Navigation */
+    
+    .nav-container {
+        position: relative;
+        background-color: #0000007c;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+    }
+    
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .dropdownmenu {
+        text-align: center;
+        font-size: 1.25em;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 34.5%;
+        width: 30%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: .25%;
+        z-index: 1;
+        white-space: nowrap;
+        border-radius: 20px;
+    }
+    
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 1% 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+    
+    /* Nav Bar Animation */
+    
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    /* Grid and Cards Setup */
+    
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+        margin-left: 4%;
+        margin-right: 1%;
+        max-width: 100%;
+        overflow: visible;
+    }
+    
+    .card {
+        perspective: 1000px;
+        max-width: 100%;
+        width: 450px;
+        height: 700px;
+    }
+    
+    .card-inner {
+        position: relative;
+        padding-top: 10%;
+        padding-bottom: -20em;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+    
+    .card:hover .card-inner {
+        transform: scale(.70) rotateY(180deg);
+        transform-origin: center center 100px;
+    }
+    
+    .card:hover .card-back {
+        opacity: 1;
+    }
+    
+    .card-front,
+    .card-back {
+        backface-visibility: hidden;
+        font-family: cinzel;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 1.5;
+        border-radius: 25px;
+        border-style: ridge;
+        border-width: .35em;
+    }
+    
+    
+    
+    /* Card Decoration */
+    
+    
+    .card-front {
+        background: linear-gradient(to right, #272727, #4f4c4c);
+        /* Front side background */
+    
+    
+    }
+    
+    .card-back {
+        opacity: 0;
+        transition: opacity 1s ease;
+        background-color: #525151;
+        transform: rotateY(180deg);
+    
+    }
+    
+    img {
+        max-width: 100%;
+        width: 90%;
+        border-radius: 10%;
+        border-style: double;
+        border-color: #000000;
+        margin-left: 4%;
+        border-width: .5em;
+        object-fit: cover;
+    }
+    
+    
+    /* Card Colors */
+    
+    
+    .Magicone {
+        font-size: .80em;
+        border-style: solid;
+        background-color: #4a4a4a;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .classdesc {
+    
+        background-color: #a6a0a0;
+        border-style: solid;
+        border-width: .5em;
+    }
+    
+    
+    /* Ranger */
+    
+    
+    #cardonefront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgba(255, 136, 9, 0.886);
+    
+    }
+    
+    
+    #rangerback {
+        background: linear-gradient(to right, #bd5506, #bd1d1d);
+    
+    }
+    
+    
+    /* Botslayer */
+    
+    #cardtwofront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: red;
+    
+    }
+    
+    #botslayerback {
+    
+        background: radial-gradient(circle at center, red, rgb(9, 9, 9));
+    
+    }
+    
+    
+    /* Commando */
+    
+    #cardthreefront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(228, 185, 13);
+    }
+    
+    #Commandoback {
+        background: radial-gradient(circle at center, rgb(225, 214, 12), rgb(9, 9, 9));
+    
+    }
+    
+    
+    /* Heavy Medic */
+    
+    #card4front {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(48, 176, 23);
+    }
+    
+    #HeavyMedicback {
+        background: radial-gradient(circle at center, rgb(7, 137, 154), rgb(18, 160, 37));
+    
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 980px) {
 /* Basic CSS for header elements */
 .cinzel {
     font-family: "Cinzel", serif;
@@ -489,6 +816,7 @@ h2 {
     max-width: 100%;
     width: 350px;
     height: 450px;
+    margin-left: 28%;
 }
 
 .card-inner {
@@ -631,3 +959,332 @@ img {
 
 }
 }
+
+
+/* for small screens */
+@media only screen and (min-width: 100px) and (max-width: 600px)  {
+
+    /* Basic CSS for header elements */
+    .cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 30px;
+        font-style: normal;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    a {
+        color: rgb(0, 0, 0)
+    }
+    
+    a:hover {
+        color: gold
+    }
+    
+    body {
+        line-height: 1;
+        margin: 0 0;
+        padding: 0;
+        background-image: url(../assets/background2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        max-width: 100%;
+    }
+    
+    
+    
+    h1 {
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 4px 10px 10px rgba(186, 186, 186, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin: 0;
+        text-align: center;
+        border-color: rgb(255, 255, 255);
+        background: linear-gradient(to right, #000000, #484848);
+        border: 2px solid;
+        border-style: solid;
+        width: 100%;
+        font-size: 2em;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    
+    h2 {
+    
+        font-family: 'Cinzel', arial, helvetica;
+        overflow: hidden;
+        letter-spacing: 2px;
+        text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
+        padding-left: 0%;
+        vertical-align: baseline;
+        margin-top: .5em;
+        text-align: center;
+    
+    
+        width: 100%;
+        font-size: 300%;
+        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        color: rgb(255, 255, 255);
+    
+    
+    
+    }
+    
+    
+    /* Navigation */
+    
+    .nav-container {
+        position: relative;
+        background-color: #0000007c;
+        border-color: black;
+        border: 2px solid black;
+        color: #fff;
+        padding: 5px;
+    }
+    
+    .dropdownarrow {
+        position: absolute;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+        color: white;
+        top: 100%;
+        left: 49.8%;
+        transform: translateX(-50%);
+        width: 10;
+        height: 10;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 8px solid #d1b814;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .dropdownmenu {
+        text-align: center;
+        font-size: .65em;
+        overflow: hidden;
+        position: relative;
+        display: none;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        transform: translateY(0%);
+        background-color: #333;
+        padding: .25%;
+        z-index: 1;
+        white-space: nowrap;
+        border-radius: 20px;
+    }
+    
+    .dropdownmenu a {
+        display: inline-block;
+        color: #b88e11;
+        text-decoration: none;
+        padding: 1% 0;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    
+    /* Dropdown animation */
+    .dropdownmenu.active {
+        display: block;
+        animation: slideDown 0.5s ease;
+    }
+    
+    /* Nav Bar Animation */
+    
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    /* Grid and Cards Setup */
+    
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10%;
+        margin-left: 1.7%;
+        margin-right: 1%;
+        max-width: 100%;
+        overflow: visible;
+    }
+    
+    .card {
+        perspective: 1000px;
+        max-width: 100%;
+        margin-left: 4%;
+        width: 450px;
+        height: 600px;
+    }
+    
+    .card-inner {
+        position: relative;
+        padding-top: 10%;
+        padding-bottom: 0em;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+    
+    .card:hover .card-inner {
+        transform: scale(.70) rotateY(180deg);
+        transform-origin: center center 100px;
+    }
+    
+    .card:hover .card-back {
+        opacity: 1;
+    }
+    
+    .card-front,
+    .card-back {
+        backface-visibility: hidden;
+        font-family: cinzel;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1em;
+        line-height: 1.5;
+        border-radius: 25px;
+        border-style: ridge;
+        border-width: .35em;
+    }
+    
+    
+    
+    /* Card Decoration */
+    
+    
+    .card-front {
+        background: linear-gradient(to right, #272727, #4f4c4c);
+        /* Front side background */
+    
+    
+    }
+    
+    .card-back {
+        opacity: 0;
+        transition: opacity 1s ease;
+        background-color: #525151;
+        transform: rotateY(180deg);
+    
+    }
+    
+    img {
+        max-width: 100%;
+        width: 90%;
+        border-radius: 10%;
+        border-style: double;
+        border-color: #000000;
+        margin-left: 4%;
+        border-width: .5em;
+        object-fit: cover;
+    }
+    
+    
+    /* Card Colors */
+    
+    
+    .Magicone {
+        font-size: .65em;
+        border-style: solid;
+        background-color: #4a4a4a;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .classdesc {
+    
+        background-color: #a6a0a0;
+        border-style: solid;
+        border-width: .5em;
+    }
+    
+    
+    /* Ranger */
+    
+    
+    #cardonefront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgba(255, 136, 9, 0.886);
+    
+    }
+    
+    
+    #rangerback {
+        background: linear-gradient(to right, #bd5506, #bd1d1d);
+    
+    }
+    
+    
+    /* Botslayer */
+    
+    #cardtwofront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: red;
+    
+    }
+    
+    #botslayerback {
+    
+        background: radial-gradient(circle at center, red, rgb(9, 9, 9));
+    
+    }
+    
+    
+    /* Commando */
+    
+    #cardthreefront {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(228, 185, 13);
+    }
+    
+    #Commandoback {
+        background: radial-gradient(circle at center, rgb(225, 214, 12), rgb(9, 9, 9));
+    
+    }
+    
+    
+    /* Heavy Medic */
+    
+    #card4front {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(48, 176, 23);
+    }
+    
+    #HeavyMedicback {
+        background: radial-gradient(circle at center, rgb(7, 137, 154), rgb(18, 160, 37));
+    
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
