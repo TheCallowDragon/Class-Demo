@@ -14,7 +14,7 @@
         background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
-
+        display: flex;
         color: #fff;
         padding: 5px;
     }
@@ -45,9 +45,8 @@
         position: relative;
         display: none;
         top: 100%;
-        left: 34.5%;
-        width: 30%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
@@ -68,7 +67,7 @@
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
 
     @keyframes slideDown {

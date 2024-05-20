@@ -111,12 +111,15 @@ border-radius: 2px solid black;
 
 .nav-container {
     position: relative;
-    background-color: #585858a6;
+    background-color: rgba(0, 0, 0, 0.525);
     border-color: black;
     border: 2px solid black;
+    display: flex;
     color: #fff;
     padding: 5px;
 }
+
+
 
 .dropdownarrow {
     position: absolute;
@@ -132,24 +135,25 @@ border-radius: 2px solid black;
     border-top: 8px solid #d1b814;
     cursor: pointer;
     z-index: 2;
+    margin-left: .4%;
 }
 
 .dropdownmenu {
     text-align: center;
     font-size: 1.25em;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     display: none;
     top: 100%;
-    left: 34.5%;
-    width: 30%;
-    transform: translateY(0%);
+    left:50%;
+    transform: translate(-50%, 0);
     background-color: #333;
     padding: .25%;
     z-index: 1;
     white-space: nowrap;
     border-radius: 20px;
 }
+
 .dropdownmenu a {
     display: inline-block;
     color: #b88e11;
@@ -159,10 +163,11 @@ border-radius: 2px solid black;
     white-space: nowrap;
 }
 
+
 /* Dropdown animation */
 .dropdownmenu.active {
     display: block;
-    animation: slideDown 0.5s ease;
+    animation: slideDown 0.05s ease;
 }
 
 @keyframes slideDown {
@@ -433,13 +438,16 @@ img {
     
     .nav-container {
         position: relative;
-        background-color: #585858a6;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
-    
+
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -454,24 +462,25 @@ img {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
-    
+
     .dropdownmenu {
         text-align: center;
         font-size: 1.25em;
-        overflow:hidden;
+        overflow: hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 34.5%;
-        width: 30%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
         white-space: nowrap;
         border-radius: 20px;
     }
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -480,11 +489,12 @@ img {
         z-index: 1;
         white-space: nowrap;
     }
-    
+
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
     
     @keyframes slideDown {
@@ -756,13 +766,16 @@ img {
     
     .nav-container {
         position: relative;
-        background-color: #585858a6;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
-    
+
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -777,24 +790,25 @@ img {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
-    
+
     .dropdownmenu {
         text-align: center;
         font-size: 1.25em;
-        overflow:hidden;
+        overflow: hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 34.5%;
-        width: 30%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
         white-space: nowrap;
         border-radius: 20px;
     }
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -803,11 +817,12 @@ img {
         z-index: 1;
         white-space: nowrap;
     }
-    
+
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
     
     @keyframes slideDown {
@@ -1077,60 +1092,65 @@ img {
   /* Navigation */
   
   .nav-container {
-      position: relative;
-      background-color: #585858a6;
-      border-color: black;
-      border: 2px solid black;
-      color: #fff;
-      padding: 5px;
-  }
-  
-  .dropdownarrow {
-      position: absolute;
-      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
-      color: white;
-      top: 100%;
-      left: 49.8%;
-      transform: translateX(-50%);
-      width: 10;
-      height: 10;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 8px solid #d1b814;
-      cursor: pointer;
-      z-index: 2;
-  }
-  
-  .dropdownmenu {
-      text-align: center;
-      font-size: 1.25em;
-      overflow:hidden;
-      position: relative;
-      display: none;
-      top: 100%;
-      left: 34.5%;
-      width: 30%;
-      transform: translateY(0%);
-      background-color: #333;
-      padding: .25%;
-      z-index: 1;
-      white-space: nowrap;
-      border-radius: 20px;
-  }
-  .dropdownmenu a {
-      display: inline-block;
-      color: #b88e11;
-      text-decoration: none;
-      padding: 1% 0;
-      z-index: 1;
-      white-space: nowrap;
-  }
-  
-  /* Dropdown animation */
-  .dropdownmenu.active {
-      display: block;
-      animation: slideDown 0.5s ease;
-  }
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.525);
+    border-color: black;
+    border: 2px solid black;
+    display: flex;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+.dropdownarrow {
+    position: absolute;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    color: white;
+    top: 100%;
+    left: 49.8%;
+    transform: translateX(-50%);
+    width: 10;
+    height: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #d1b814;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: .4%;
+}
+
+.dropdownmenu {
+    text-align: center;
+    font-size: 1.25em;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%, 0);
+    background-color: #333;
+    padding: .25%;
+    z-index: 1;
+    white-space: nowrap;
+    border-radius: 20px;
+}
+
+.dropdownmenu a {
+    display: inline-block;
+    color: #b88e11;
+    text-decoration: none;
+    padding: 1% 0;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+
+/* Dropdown animation */
+.dropdownmenu.active {
+    display: block;
+    animation: slideDown 0.05s ease;
+}
   
   @keyframes slideDown {
       0% {
@@ -1360,7 +1380,7 @@ img {
         background-color: #292727b8;
         width: 37%;
         margin-left: 32%;
-        font-size: 300%;
+        font-size: 1.5em;
         -webkit-text-stroke: .8px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
     
@@ -1385,13 +1405,16 @@ img {
     
     .nav-container {
         position: relative;
-        background-color: #585858a6;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
-    
+
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -1406,24 +1429,25 @@ img {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
-    
+
     .dropdownmenu {
         text-align: center;
-        font-size: .65em;
-        overflow:hidden;
+        font-size: .80em;
+        overflow: hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 0%;
-        width: 100%;
-        transform: translateY(0%);
+        left: 50%;
+        transform: translate(-53%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
         white-space: nowrap;
         border-radius: 20px;
     }
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -1432,11 +1456,12 @@ img {
         z-index: 1;
         white-space: nowrap;
     }
-    
+
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
     
     @keyframes slideDown {

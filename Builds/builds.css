@@ -82,12 +82,15 @@ h2 {
 
 .nav-container {
     position: relative;
-    background-color: #0000007c;
+    background-color: rgba(0, 0, 0, 0.525);
     border-color: black;
     border: 2px solid black;
+    display: flex;
     color: #fff;
     padding: 5px;
 }
+
+
 
 .dropdownarrow {
     position: absolute;
@@ -103,6 +106,7 @@ h2 {
     border-top: 8px solid #d1b814;
     cursor: pointer;
     z-index: 2;
+    margin-left: .4%;
 }
 
 .dropdownmenu {
@@ -112,9 +116,8 @@ h2 {
     position: relative;
     display: none;
     top: 100%;
-    left: 34.5%;
-    width: 30%;
-    transform: translateY(0%);
+    left:50%;
+    transform: translate(-50%, 0);
     background-color: #333;
     padding: .25%;
     z-index: 1;
@@ -131,12 +134,12 @@ h2 {
     white-space: nowrap;
 }
 
+
 /* Dropdown animation */
 .dropdownmenu.active {
     display: block;
-    animation: slideDown 0.5s ease;
+    animation: slideDown 0.05s ease;
 }
-
 /* Nav Bar Animation */
 
 @keyframes slideDown {
@@ -408,13 +411,16 @@ img {
     
     .nav-container {
         position: relative;
-        background-color: #0000007c;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
-    
+
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -429,8 +435,9 @@ img {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
-    
+
     .dropdownmenu {
         text-align: center;
         font-size: 1.25em;
@@ -438,16 +445,15 @@ img {
         position: relative;
         display: none;
         top: 100%;
-        left: 34.5%;
-        width: 30%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
         white-space: nowrap;
         border-radius: 20px;
     }
-    
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -456,11 +462,12 @@ img {
         z-index: 1;
         white-space: nowrap;
     }
-    
+
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
     
     /* Nav Bar Animation */
@@ -727,12 +734,15 @@ h2 {
 
 .nav-container {
     position: relative;
-    background-color: #0000007c;
+    background-color: rgba(0, 0, 0, 0.525);
     border-color: black;
     border: 2px solid black;
+    display: flex;
     color: #fff;
     padding: 5px;
 }
+
+
 
 .dropdownarrow {
     position: absolute;
@@ -748,18 +758,18 @@ h2 {
     border-top: 8px solid #d1b814;
     cursor: pointer;
     z-index: 2;
+    margin-left: .4%;
 }
 
 .dropdownmenu {
     text-align: center;
-    font-size: .65em;
+    font-size: 1.25em;
     overflow: hidden;
     position: relative;
     display: none;
     top: 100%;
-    left: 0%;
-    width: 100%;
-    transform: translateY(0%);
+    left:50%;
+    transform: translate(-50%, 0);
     background-color: #333;
     padding: .25%;
     z-index: 1;
@@ -776,12 +786,12 @@ h2 {
     white-space: nowrap;
 }
 
+
 /* Dropdown animation */
 .dropdownmenu.active {
     display: block;
-    animation: slideDown 0.5s ease;
+    animation: slideDown 0.05s ease;
 }
-
 /* Nav Bar Animation */
 
 @keyframes slideDown {
@@ -1031,10 +1041,8 @@ img {
         vertical-align: baseline;
         margin-top: .5em;
         text-align: center;
-    
-    
         width: 100%;
-        font-size: 300%;
+        font-size: 3em;
         -webkit-text-stroke: .8px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
     
@@ -1047,13 +1055,16 @@ img {
     
     .nav-container {
         position: relative;
-        background-color: #0000007c;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
-    
+
+
+
     .dropdownarrow {
         position: absolute;
         filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
@@ -1068,25 +1079,25 @@ img {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
-    
+
     .dropdownmenu {
         text-align: center;
-        font-size: .65em;
+        font-size: .75em;
         overflow: hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 0%;
-        width: 100%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
         white-space: nowrap;
         border-radius: 20px;
     }
-    
+
     .dropdownmenu a {
         display: inline-block;
         color: #b88e11;
@@ -1095,11 +1106,12 @@ img {
         z-index: 1;
         white-space: nowrap;
     }
-    
+
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
     
     /* Nav Bar Animation */

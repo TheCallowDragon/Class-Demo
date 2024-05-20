@@ -62,17 +62,22 @@ h2 {
     letter-spacing: 2px;
     text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
     padding-left: 0%;
-    margin-right: 3%;
+   
     vertical-align: baseline;
     margin-top: .5em;
     text-align: center;
-
-
     width: 100%;
-    font-size: 300%;
-    -webkit-text-stroke: .8px rgb(195, 9, 9);
+    font-size: 3em;
+    -webkit-text-stroke: .50px rgb(195, 9, 9);
     color: rgb(255, 255, 255);
 
+
+
+}
+
+
+.category-container h2 {
+margin-left: 5%;  
 
 
 }
@@ -82,12 +87,15 @@ h2 {
 
 .nav-container {
     position: relative;
-    background-color: #0000007c;
+    background-color: rgba(0, 0, 0, 0.525);
     border-color: black;
     border: 2px solid black;
+    display: flex;
     color: #fff;
     padding: 5px;
 }
+
+
 
 .dropdownarrow {
     position: absolute;
@@ -103,6 +111,7 @@ h2 {
     border-top: 8px solid #d1b814;
     cursor: pointer;
     z-index: 2;
+    margin-left: .4%;
 }
 
 .dropdownmenu {
@@ -112,9 +121,8 @@ h2 {
     position: relative;
     display: none;
     top: 100%;
-    left: 34.5%;
-    width: 30%;
-    transform: translateY(0%);
+    left:50%;
+    transform: translate(-50%, 0);
     background-color: #333;
     padding: .25%;
     z-index: 1;
@@ -131,10 +139,11 @@ h2 {
     white-space: nowrap;
 }
 
+
 /* Dropdown animation */
 .dropdownmenu.active {
     display: block;
-    animation: slideDown 0.5s ease;
+    animation: slideDown 0.05s ease;
 }
 
 /* Nav Bar Animation */
@@ -157,7 +166,7 @@ h2 {
 .column-container {
     column-count: 2;
     /* Divide content into two columns */
-    column-gap: 0%;
+    column-gap: 5%;
     /* Set the gap between columns as a percentage */
     column-rule: 2px solid #000000;
     /* Define column rule */
@@ -166,7 +175,7 @@ h2 {
 
 .category-container {
     break-inside: avoid-column;
-    margin-left: 5%;
+  
 }
 
 /* Apply styles to the paragraphs within each category container */
@@ -198,9 +207,31 @@ h2 {
 
 .section {
     background-color: #333;
-    width: 65%;
-    margin-left: 15%;
-    border-radius: 30PX;
+    
+    margin-left: 3%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+
+.section p {
+width: 45%;
+margin-left: 31%;
+padding-left: 15.25%;
+font-size: 1em;
+align-items: center;
+justify-items: center;
+
+}
+
+
+
+#Automatons {
+margin-left: -4%;
+margin-right: 13%;
+
 }
 
 .category-container .LABEL {
@@ -210,6 +241,7 @@ h2 {
     margin-left: 0%;
     color: gold;
     background-color: #0f0f0fd3;
+    font-size: 1.25em;
 
 }
 
@@ -225,7 +257,7 @@ h2 {
 
 
 /* for small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .cinzel {
         font-family: "Cinzel", serif;
@@ -283,26 +315,30 @@ h2 {
     }
 
 
+
+
     h2 {
 
         font-family: 'Cinzel', arial, helvetica;
         overflow: hidden;
         letter-spacing: 2px;
         text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
-        padding-left: 0%;
-        margin-right: 3%;
+     
+        margin-left: -2%;
         vertical-align: baseline;
         margin-top: .5em;
         text-align: center;
 
 
-        width: 100%;
-        font-size: 300%;
-        -webkit-text-stroke: .8px rgb(195, 9, 9);
+        width: 90%;
+        font-size: 1em;
+        -webkit-text-stroke: .25px rgb(195, 9, 9);
         color: rgb(255, 255, 255);
 
+    }
 
-
+    #enemies {
+        margin-left: 5%;
     }
 
 
@@ -310,12 +346,15 @@ h2 {
 
     .nav-container {
         position: relative;
-        background-color: #0000007c;
+        background-color: rgba(0, 0, 0, 0.525);
         border-color: black;
         border: 2px solid black;
+        display: flex;
         color: #fff;
         padding: 5px;
     }
+
+
 
     .dropdownarrow {
         position: absolute;
@@ -331,18 +370,18 @@ h2 {
         border-top: 8px solid #d1b814;
         cursor: pointer;
         z-index: 2;
+        margin-left: .4%;
     }
 
     .dropdownmenu {
         text-align: center;
-        font-size: .65em;
+        font-size: .77em;
         overflow: hidden;
         position: relative;
         display: none;
         top: 100%;
-        left: 0%;
-        width: 100%;
-        transform: translateY(0%);
+        left:50%;
+        transform: translate(-56%, 0);
         background-color: #333;
         padding: .25%;
         z-index: 1;
@@ -359,10 +398,11 @@ h2 {
         white-space: nowrap;
     }
 
+
     /* Dropdown animation */
     .dropdownmenu.active {
         display: block;
-        animation: slideDown 0.5s ease;
+        animation: slideDown 0.05s ease;
     }
 
     /* Nav Bar Animation */
@@ -416,13 +456,20 @@ h2 {
         width: 90%;
         margin-left: 0%;
         border-radius: 30PX;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
     }
 
     .section p {
-        width: 65%;
-        margin-left: 22%;
+        width: 45%;
+        margin-left: 28%;
+      
         text-align: center;
-        font-size: 1em;
+        align-items: center;
+        justify-items: center;
+        padding-left: 14.5%;
+        font-size: .70em;
     }
 
 
@@ -430,8 +477,13 @@ h2 {
         width: 100%;
         color: gold;
         background-color: #0f0f0fd3;
-        font-size: .5em;
+        font-size: .75em;
     }
 
+
+   
+    
+    
+   
 
 }
