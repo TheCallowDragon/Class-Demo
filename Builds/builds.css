@@ -1146,8 +1146,8 @@ img {
     .card {
         perspective: 1000px;
         max-width: 100%;
-        margin-left: 4%;
-        width: 450px;
+        margin-left: 8%;
+        width: 350px;
         height: 600px;
     }
     
@@ -1177,7 +1177,7 @@ img {
         position: absolute;
         overflow: hidden;
         white-space: nowrap;
-        font-size: 1em;
+        font-size: .70em;
         line-height: 1.5;
         border-radius: 25px;
         border-style: ridge;
