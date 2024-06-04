@@ -38,6 +38,18 @@
         margin-left: .4%;
     }
 
+    .dropdownarrow p {
+        color: white;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: -3px;
+        background-color: #313131bd;
+        border-radius: 4px;
+        border-style: groove;
+        border-color: gold;
+
+    }
+
     .dropdownmenu {
         text-align: center;
         font-size: 1.25em;
@@ -45,7 +57,7 @@
         position: relative;
         display: none;
         top: 100%;
-        left:50%;
+        left: 50%;
         transform: translate(-50%, 0);
         background-color: #333;
         padding: .25%;
@@ -194,7 +206,7 @@
         margin: 0 0;
         padding: 0;
 
-        animation: cycleBackgrounds 60s linear infinite;
+        animation: cycleBackgrounds 250s linear infinite;
         animation-delay: 1s;
         background-repeat: no-repeat;
         background-size: cover;
@@ -255,10 +267,16 @@
     }
 
     footer {
-        text-align: left;
-
+        font-size: .75em;
+        text-align: center;
+        background-color: grey;
+        border-radius: 20px;
+        border-style: groove;
         margin-top: 30%;
+        width: 15%;
+        padding-left: 0%;
         margin-left: 15%;
+        margin-top: 37%;
     }
 
     p {
@@ -313,12 +331,12 @@
     }
 
 
-.Flexbox {
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
+    .Flexbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
-}
+    }
 
 
 
@@ -343,14 +361,14 @@ button {
 
     /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
- 
+
     * {
         max-width: 100%;
         box-sizing: border-box;
 
     }
 
-   
+
 
     /* Navigation Bar Config */
 
@@ -381,6 +399,18 @@ button {
         cursor: pointer;
         z-index: 2;
         margin-left: .4%;
+    }
+
+    .dropdownarrow p {
+        color: white;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: -3px;
+        background-color: #313131bd;
+        border-radius: 4px;
+        border-style: groove;
+        border-color: gold;
+
     }
 
     .dropdownmenu {
@@ -540,7 +570,7 @@ button {
         margin: 0 0;
         padding: 0;
 
-        animation: cycleBackgrounds 60s linear infinite;
+        animation: cycleBackgrounds 250s linear infinite;
         animation-delay: 1s;
         background-repeat: no-repeat;
         background-size: cover;
@@ -604,10 +634,15 @@ button {
 
 
     footer {
-        text-align: left;
-
+   
+        text-align: center;
+        background-color: grey;
+        border-radius: 20px;
+        border-style: groove;
         margin-top: 30%;
+        width: 50%;
         margin-left: 15%;
+        margin-top: 37%;
     }
 
     p {
@@ -670,4 +705,3 @@ button {
     color: gold;
 
 }
-

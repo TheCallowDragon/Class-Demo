@@ -62,7 +62,7 @@ h2 {
     letter-spacing: 2px;
     text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
     padding-left: 0%;
-   
+
     vertical-align: baseline;
     margin-top: .5em;
     text-align: center;
@@ -77,7 +77,7 @@ h2 {
 
 
 .category-container h2 {
-margin-left: 5%;  
+    margin-left: 5%;
 
 
 }
@@ -114,6 +114,17 @@ margin-left: 5%;
     margin-left: .4%;
 }
 
+.dropdownarrow p {
+    color: white;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: -3px;
+    background-color: #313131bd;
+    border-radius: 4px;
+    border-style: groove;
+    border-color: gold;
+
+}
 .dropdownmenu {
     text-align: center;
     font-size: 1.25em;
@@ -121,7 +132,7 @@ margin-left: 5%;
     position: relative;
     display: none;
     top: 100%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, 0);
     background-color: #333;
     padding: .25%;
@@ -175,7 +186,7 @@ margin-left: 5%;
 
 .category-container {
     break-inside: avoid-column;
-  
+
 }
 
 /* Apply styles to the paragraphs within each category container */
@@ -207,7 +218,7 @@ margin-left: 5%;
 
 .section {
     background-color: #333;
-    
+
     margin-left: 3%;
     border-radius: 30px;
     display: flex;
@@ -217,20 +228,20 @@ margin-left: 5%;
 
 
 .section p {
-width: 45%;
-margin-left: 31%;
-padding-left: 15.25%;
-font-size: 1em;
-align-items: center;
-justify-items: center;
+    width: 45%;
+    margin-left: 31%;
+    padding-left: 15.25%;
+    font-size: 1em;
+    align-items: center;
+    justify-items: center;
 
 }
 
 
 
 #Automatons {
-margin-left: -4%;
-margin-right: 13%;
+    margin-left: -4%;
+    margin-right: 13%;
 
 }
 
@@ -247,7 +258,15 @@ margin-right: 13%;
 
 
 
+#enemies {
 
+    background-color: #242424;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 37.5%;
+    border-radius: 20px;
+}
 
 
 
@@ -323,7 +342,7 @@ margin-right: 13%;
         overflow: hidden;
         letter-spacing: 2px;
         text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
-     
+
         margin-left: -2%;
         vertical-align: baseline;
         margin-top: .5em;
@@ -339,6 +358,7 @@ margin-right: 13%;
 
     #enemies {
         margin-left: 5%;
+        background-color: #000000;
     }
 
 
@@ -373,6 +393,17 @@ margin-right: 13%;
         margin-left: .4%;
     }
 
+    .dropdownarrow p {
+        color: white;
+        padding: 0%;
+        margin-top: 0%;
+        margin-bottom: -3px;
+        background-color: #313131bd;
+        border-radius: 4px;
+        border-style: groove;
+        border-color: gold;
+
+    }
     .dropdownmenu {
         text-align: center;
         font-size: .77em;
@@ -380,7 +411,7 @@ margin-right: 13%;
         position: relative;
         display: none;
         top: 100%;
-        left:50%;
+        left: 50%;
         transform: translate(-56%, 0);
         background-color: #333;
         padding: .25%;
@@ -464,7 +495,7 @@ margin-right: 13%;
     .section p {
         width: 45%;
         margin-left: 28%;
-      
+
         text-align: center;
         align-items: center;
         justify-items: center;
@@ -481,9 +512,9 @@ margin-right: 13%;
     }
 
 
-   
-    
-    
-   
+
+
+
+
 
 }

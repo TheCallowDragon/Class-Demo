@@ -1,0 +1,9 @@
+ Hard to figure out where the regular nav menu was (Navigation Now Labeled)
+ - being larger or having it be named might be helpful (Navigation Now Labeled)
+-background maybe being a little slower might make the site flow a little better (Now twice as long)
+-footer that contains copyright information is difficult to read against the shifting background image when the background image is on a darker color (implemented)
+-On the Weapons page, it might be more aesthetically pleasing for viewers if instead of having each weapon shown above each other, they were sorted into a grid to better use the space available.
+- On many of the titles for different sections of your website, I find it difficult to read the text; to better mark where each section begins, I think this text could be enlarged (see the "Scavengers" title below).
+-There does seem to be a breakpoint around the 250 px width, at least on Chrome as the text box gets distended and text starts to spill out. (WIP)
+- consistency’s sake the menu should be accessible from the get-go
+
