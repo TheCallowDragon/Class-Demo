@@ -181,6 +181,7 @@ h2 {
     /* Set the gap between columns as a percentage */
     column-rule: 2px solid #000000;
     /* Define column rule */
+    margin-left: 3%;
 
 }
 
@@ -343,7 +344,7 @@ h2 {
         letter-spacing: 2px;
         text-shadow: 10px 20px 10px rgba(0, 0, 0, 0.256);
 
-        margin-left: -2%;
+        margin-left: -1%;
         vertical-align: baseline;
         margin-top: .5em;
         text-align: center;
@@ -357,8 +358,9 @@ h2 {
     }
 
     #enemies {
-        margin-left: 5%;
-        background-color: #000000;
+        margin-top: 5%;
+        margin-left: 37%;
+        background-color: #3f3f3f;
     }
 
 
@@ -460,6 +462,7 @@ h2 {
         /* Set the gap between columns as a percentage */
         column-rule: 2px solid #000000;
         /* Define column rule */
+        margin-left: 7%;
 
     }
 
@@ -493,22 +496,26 @@ h2 {
     }
 
     .section p {
-        width: 45%;
-        margin-left: 28%;
+        width: 70%;
+        margin-left: 18%;
 
         text-align: center;
         align-items: center;
         justify-items: center;
         padding-left: 14.5%;
-        font-size: .70em;
+        font-size: 1em;
     }
 
 
-    .section .LABEL {
-        width: 100%;
+    .section p.LABEL {
+        width: 110%;
         color: gold;
         background-color: #0f0f0fd3;
-        font-size: .75em;
+        font-size: 1em;
+        padding-left: .75em;
+        padding-right: -100%;
+        text-align: left;
+        margin-left: -2%;
     }
 
 

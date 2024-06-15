@@ -1,4 +1,35 @@
+
 @media only screen and (min-width: 610px) {
+    .contentmain {
+        color: rgb(236, 202, 139);
+        font-weight: bold;
+        font-family: cinzel;
+        word-spacing: 100%;
+        -webkit-text-stroke-width: .8px black;
+    }
+
+    .video-grid {
+        width: 25%;
+        display: grid;
+        margin-top: 14.8%;
+        margin-left: 55%;
+        z-index: 1000;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        /* Adjust the column width as needed */
+    
+        gap: 20px;
+        /* Adjust the gap between videos */
+    }
+    
+    .video-grid iframe {
+        width: 100%;
+        /* Ensure each iframe fills its container */
+        height: 100%;
+        /* Ensure each iframe fills its container */
+        border: none;
+        /* Remove iframe border */
+    }
+    
     /* CSS rules for large devices */
 
     * {
@@ -273,7 +304,7 @@
         border-radius: 20px;
         border-style: groove;
         margin-top: 30%;
-        width: 15%;
+        width: 40%;
         padding-left: 0%;
         margin-left: 15%;
         margin-top: 37%;
@@ -304,7 +335,7 @@
     }
 
 
-    #iframe {
+    #iframemap {
         position: relative;
         height: 50em;
         width: 60%;
@@ -359,6 +390,36 @@ button {
 
 @media only screen and (max-width: 600px) {
 
+    .contentmain {
+        color: rgb(236, 202, 139);
+        font-weight: bold;
+        font-family: cinzel;
+        word-spacing: 100%;
+        -webkit-text-stroke-width: .8px black;
+       
+    }
+    .video-grid {
+        width: 25%;
+        display: grid;
+        margin-top: 9.8%;
+        margin-left: 1.2%;
+        z-index: 1000;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        /* Adjust the column width as needed */
+    
+        gap: 20px;
+        /* Adjust the gap between videos */
+    }
+    
+    .video-grid iframe {
+        width: 100%;
+        /* Ensure each iframe fills its container */
+        height: 100%;
+        /* Ensure each iframe fills its container */
+        border: none;
+        /* Remove iframe border */
+    }
+    
     /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
 
@@ -634,7 +695,7 @@ button {
 
 
     footer {
-   
+
         text-align: center;
         background-color: grey;
         border-radius: 20px;
@@ -670,7 +731,7 @@ button {
     }
 
 
-    #iframe {
+    #iframemap {
         position: relative;
         height: 100%;
         width: 100%;

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
    
     
         var toggleButton = document.getElementById('toggle-button');
-        var iframe = document.getElementById('iframe');
+        var iframe = document.getElementById('iframemap');
     
         // Add event listener to the button
         toggleButton.addEventListener('click', function() {
@@ -34,5 +34,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-var iframe = document.getElementById('iframe');
-iframe.contentWindow.scrollTo(0, iframe.contentDocument.body.scrollHeight / 2);

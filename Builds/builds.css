@@ -332,10 +332,28 @@
 
 
 
+/* Techniciam */
+#card5front {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(176, 140, 23);
+}
 
+#Technicianback {
+    background: linear-gradient(orange,wheat)
 
+}
 
+/* Jump Trooper */
 
+#card6front {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(204, 21, 21);
+}
+
+#JumpTrooperBack {
+    background: linear-gradient(wheat,red)
+
+}
 
 
 

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0">
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -33,9 +34,12 @@
 
 
 
-   
+
     <div class="nav-container">
-        <div class="dropdownarrow" id="dropdownarrow"><p>Navigation<p></div>
+        <div class="dropdownarrow" id="dropdownarrow">
+            <p>Navigation
+            <p>
+        </div>
         <nav class="dropdownmenu" id="dropdownmenu">
             <a href="Weapons/Weapons.html">| Weapons |</a>
             <a href="Enemies/Enemies.html">Enemies |</a>
@@ -55,50 +59,59 @@
     </h3>
 
     <div class="Flexbox">
-    <!-- Div class for image layout-->
-    <div class="wrapper">
-        <div class="left">
-            <!--Left images-->
-            <img src="assets/announcement/Helldiver1.jpg">
-            <img src="assets/announcement/helldiver3.jpg">
-            <img src="assets/announcement/helldiver2.png">
+        <!-- Div class for image layout-->
+        <div class="wrapper">
+            <div class="left">
+                <!--Left images-->
+                <img src="assets/announcement/Helldiver1.jpg">
+                <img src="assets/announcement/helldiver3.jpg">
+                <img src="assets/announcement/helldiver2.png">
+            </div>
+            <!--Right Images-->
+            <div class="right">
+                <img src="assets/announcement/helldiver4.jpg">
+                <img src="assets/announcement/Helldiver5.jpg">
+                <img src="assets/announcement/helldiver6.jpg">
+            </div>
         </div>
-        <!--Right Images-->
-        <div class="right">
-            <img src="assets/announcement/helldiver4.jpg">
-            <img src="assets/announcement/Helldiver5.jpg">
-            <img src="assets/announcement/helldiver6.jpg">
-        </div>
-    </div>
 
-    <!--Primary (Middle) site text-->
-    <main>
-        <div class="contentmain">
-            <p id="Welcome">Welcome to Arms of Libertea, the democratic stronghold of the Helldivers. <br> Here, we
-                champion
-                the principles of democracy as we equip you with the knowledge and tools to thrive on the battleground
-            </p>
+        <!--Primary (Middle) site text-->
+        <main>
+            <div class="contentmain">
+                <p id="Welcome">Welcome to Arms of Libertea, the democratic stronghold of the Helldivers. <br> Here, we
+                    champion
+                    the principles of democracy as we equip you with the knowledge and tools to thrive on the
+                    battleground
+                </p>
 
-            <ul>
-                <li>Weapon Guides (Active 5/14/24)</li>
-                <li>Enemy Intelligence (Now Open 5/6/24)</li>
-                <li>Stratagem Cards (Active)</li>
-                <li>Stratagem Practice (Active)</li>
-                <li>Build Cards (Active)</li>
-                <li>Galactic War Intel (Active)</li>
-            </ul>
+                <ul>
+                    <li>Weapon Guides (Active 5/14/24)</li>
+                    <li>Enemy Intelligence (Now Open 5/6/24)</li>
+                    <li>Stratagem Cards (Active)</li>
+                    <li>Stratagem Practice (Active)</li>
+                    <li>Build Cards (Active)</li>
+                    <li>Galactic War Intel (Active)</li>
+                </ul>
 
-        </div>
-       
-    </main>
+            </div>
+
+        </main>
     </div>
     <button id="toggle-button">View War Effort</button>
     <div class="mapmain" id="PlaceToPutTable">
-        <iframe class="map" id="iframe" src="https://divers.gg/liberation-map" style="display:hidden;"></iframe>
+        <iframe class="map" id="iframemap" src="https://divers.gg/liberation-map" style="display:hidden;"></iframe>
     </div>
+    <div class="video-grid">
+  
 
+       <!-- Repeat for other videos -->
+       <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=CTDdWRFUa1OLZTNr&amp;list=PLNWUhQiG1cydJDoJqpL9op2-mSaMmtuNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+       <!-- Add more iframe elements for each video in the playlist -->
+       <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=mV69g_ocNzIPCAJk&amp;list=PLW250uNvfh760vKzCVyWR7DaY7K33cvFD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/0GcwvYNJ29E?si=uztEo-H9CFk_EC07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <iframe width="1280" height="720" src="https://www.youtube.com/embed/S9STizATKjE" title="INTRO CINEMATIC - HELLDIVERS™ 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+<br>
 
     <footer>
         <!--Copyright Notification & character entity (&copy;)-->
@@ -106,5 +119,6 @@
     </footer>
 
 </body>
+
 
 </html>
