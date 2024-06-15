@@ -227,8 +227,8 @@
     }
 
     .Weapon {
-     
-      
+
+
         background-color: rgba(66, 66, 66, 0.452);
         width: 35%;
         margin-left: 32%;
@@ -238,7 +238,7 @@
 
 
     .Class {
-        
+
         width: 75%;
         background-color: #000000e8;
         margin-left: 12%;
@@ -655,6 +655,7 @@
         border-color: gold;
 
     }
+
     .dropdownmenu {
         text-align: center;
         font-size: 2.5em;
@@ -771,6 +772,7 @@
         margin-top: 10%;
         font-size: 2em;
     }
+
     /* Not at all complete (Looks different on mobile vs desktop view)
     /* CSS rules for extra small devices */
 
