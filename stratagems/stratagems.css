@@ -1593,17 +1593,18 @@
         display: grid;
         grid-template-columns: repeat(1, .5fr);
         width: 100%;
-        gap: 0%;
+        gap: 2%;
         padding-left: 0%;
         border: 15px double black;
         border-radius: 1em;
+        
     }
 
     .card {
         perspective: 1000px;
-        width: 350px;
-        height: 700px;
-
+        width: 400px;
+        height: 400px;
+        margin: 30%;
 
     }
 
@@ -1616,11 +1617,11 @@
         height: 20%;
         padding-top: 150%;
         transform-style: preserve-3d;
-        transition: transform .5s;
+        transition: transform 1s;
     }
 
     .card:hover .card-inner {
-        transform: scale(1) rotateY(180deg);
+        transform: scale(1) rotateY(540deg);
 
     }
 
@@ -1640,8 +1641,9 @@
         border-radius: 25px;
         border-style: ridge;
         border-width: .35em;
-        width: 300px;
-        height: 250px;
+        width: 150px;
+        height: 300px;
+        margin-left: 29%;
     }
 
     /* Card Decoration */

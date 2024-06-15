@@ -456,13 +456,13 @@ h2 {
     /* main */
 
     .column-container {
-        column-count: 2;
+        column-count: 1;
         /* Divide content into two columns */
         column-gap: 5%;
         /* Set the gap between columns as a percentage */
         column-rule: 2px solid #000000;
         /* Define column rule */
-        margin-left: 7%;
+        margin-left: 2%;
 
     }
 
@@ -488,7 +488,7 @@ h2 {
     .section {
         background-color: #333;
         width: 90%;
-        margin-left: 0%;
+        margin-left: 3%;
         border-radius: 30PX;
         display: flex;
         flex-direction: column;
@@ -496,7 +496,7 @@ h2 {
     }
 
     .section p {
-        width: 70%;
+        width: 60%;
         margin-left: 18%;
 
         text-align: center;
@@ -512,7 +512,7 @@ h2 {
         color: gold;
         background-color: #0f0f0fd3;
         font-size: 1em;
-        padding-left: .75em;
+        padding-left: 35%;
         padding-right: -100%;
         text-align: left;
         margin-left: -2%;
